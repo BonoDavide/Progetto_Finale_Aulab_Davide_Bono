@@ -5,6 +5,7 @@ namespace Database\Seeders;
 use App\Models\User;
 // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
+use Illuminate\Support\Facades\DB;
 
 class DatabaseSeeder extends Seeder
 {
@@ -19,5 +20,25 @@ class DatabaseSeeder extends Seeder
             'name' => 'Test User',
             'email' => 'test@example.com',
         ]);
+
+        $categories = [
+            ['name' => 'Viaggi'],
+            ['name' => 'Film'],
+            ['name' => 'Musica'],
+            ['name' => 'Articoli Sportivi'],
+            ['name' => 'Food'],
+            ['name' => 'Giardinaggio'],
+            ['name' => 'Pet'],
+            ['name' => 'Libri'],
+            ['name' => 'Informatica'],
+            ['name' => 'Arredamento'],
+        ];
+        foreach($categories as $category){
+
+            DB::table('categories')->insert([
+                'name'=> $category['name']
+            ]);
+        }
+
     }
 }

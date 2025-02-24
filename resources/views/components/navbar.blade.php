@@ -31,6 +31,9 @@
                 </li> --}}
                 @auth
                 <li class="nav-item">
+                    <a class="btn btn-primary mx-3" href="{{route('post.create')}}">Inserisci Annuncio</a>
+                </li>
+                <li class="nav-item">
                 <form action="{{route('logout')}}" method="POST">
                     @csrf
                     <button type="submit" class="btn btn-danger">Logout</button>
