@@ -12,7 +12,7 @@ class PostController extends Controller
      */
     public function index()
     {
-        //
+        return view('post.indexPost');
     }
 
     /**
@@ -36,7 +36,7 @@ class PostController extends Controller
      */
     public function show(Post $post)
     {
-        //
+        return view('post.detailPost',compact('post'));
     }
 
     /**

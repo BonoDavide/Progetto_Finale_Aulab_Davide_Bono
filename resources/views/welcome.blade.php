@@ -13,6 +13,11 @@
                 </div>
             @endif
         </div>
+        <div class="col-4">
+            @foreach ($posts as $post)
+                <x-card :post="$post"></x-card>
+            @endforeach
+        </div>
     </div>
 
 </x-layout>

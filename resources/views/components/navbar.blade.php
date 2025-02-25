@@ -9,15 +9,29 @@
                 <li class="nav-item">
                     <a class="nav-link active" aria-current="page" href="{{route('homePage')}}">Home</a>
                 </li>
-                @guest
+
+                <li class="nav-item">
+                    <a class="nav-link" href="{{route('post.indexPost')}}">Catalogo annunci</a>
+                </li>
+                @auth
+                <li class="nav-item">
+                    <a class="btn btn-primary mx-3" href="{{route('post.create')}}">Inserisci Annuncio</a>
+                </li>
+                <li class="nav-item">
+                <form action="{{route('logout')}}" method="POST">
+                    @csrf
+                    <button type="submit" class="btn btn-danger">Logout</button>
+                </form>
+                </li>
+                @else
                 <li class="nav-item">
                     <a class="nav-link" href="{{route('login')}}">Accedi</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="{{route('register')}}">Registrati</a>
                 </li>  
-                @endguest
-                
+                @endauth
+              
                 {{-- <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                         Dropdown
@@ -29,23 +43,14 @@
                         <li><a class="dropdown-item" href="#">Something else here</a></li>
                     </ul>
                 </li> --}}
-                @auth
-                <li class="nav-item">
-                    <a class="btn btn-primary mx-3" href="{{route('post.create')}}">Inserisci Annuncio</a>
-                </li>
-                <li class="nav-item">
-                <form action="{{route('logout')}}" method="POST">
-                    @csrf
-                    <button type="submit" class="btn btn-danger">Logout</button>
-                </form>
-            </li>
+          
         </ul>
         {{-- <form class="d-flex" role="search">
             <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
             <button class="btn btn-outline-success" type="submit">Search</button>
         </form> --}}
     </div>
-    @endauth
+  
     
 </div>
 </nav>
