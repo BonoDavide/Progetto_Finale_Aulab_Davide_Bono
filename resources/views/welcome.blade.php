@@ -1,23 +1,16 @@
 <x-layout>
-
     <div class="container">
         <div class="row">
-            <div class="col-12 pt-5"></div>
-            <h1 class="text-center">Benvenuto!</h1>
+            <div class="col-12 pt-5">
+                <h1 class="text-center">Benvenuto!</h1>
+            </div>
         </div>
-        <div class="row">
-            <div class="col-12 col-md-8 pt-5"></div>
-            @if (session('status'))
-                <div class="card bg-light alert text-success text-uppercase ">
-                    {{ session('status') }}
-                </div>
-            @endif
-        </div>
-        <div class="col-4">
+        <div class="row justify-content-evenly">           
             @foreach ($posts as $post)
-                <x-card :post="$post"></x-card>
-            @endforeach
-        </div>
+                <div class="col-4 my-4 d-flex justify-content-center">
+                    <x-card :post="$post"></x-card>
+                </div>
+            @endforeach    
+        </div>    
     </div>
-
 </x-layout>

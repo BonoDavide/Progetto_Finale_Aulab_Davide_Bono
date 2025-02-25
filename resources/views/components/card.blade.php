@@ -1,5 +1,5 @@
 <div class="card" style="width: 18rem;">
-    <img src="..." class="card-img-top" alt="...">
+    <img src="https://picsum.photos/200" class="card-img-top" alt="...">
  
     <div class="card-body">
         <h5 class="card-title">{{ $post->title }}</h5>

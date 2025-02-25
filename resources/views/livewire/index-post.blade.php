@@ -1,15 +1,11 @@
 <div>
-
-    <div>
-        <h2 class="text-center">Ultimi Articoli</h2>
-
-        @foreach ($posts as $post)
-            <div class="col-4">
-                <x-card :post="$post">
-
-                </x-card>
-            </div>
-        @endforeach
-
+    <div class="container">
+        <div class="row justify-content-evenly">
+            @foreach ($posts as $post)
+                <div class="col-4 d-flex justify-content-center my-4">
+                    <x-card :post="$post"></x-card>
+                </div>
+            @endforeach
+        </div>
     </div>
 </div>

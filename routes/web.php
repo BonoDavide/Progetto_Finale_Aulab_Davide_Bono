@@ -10,3 +10,4 @@ Route::get('/',[PublicController::class,"homePage"] )->name("homePage");
 Route::get('/post/create', [PostController::class, 'create'])->name('post.create');
 Route::get('/post/index', [PostController::class, 'index'])->name('post.indexPost');
 Route::get('/post/detail/{post}', [PostController::class, 'show'])->name('post.detailPost');
+Route::get('/category/{category}', [PostController::class, 'byCategory'])->name('byCategory');

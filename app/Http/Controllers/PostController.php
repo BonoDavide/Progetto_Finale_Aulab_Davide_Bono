@@ -3,10 +3,19 @@
 namespace App\Http\Controllers;
 
 use App\Models\Post;
+use App\Models\Category;
 use Illuminate\Http\Request;
+use Illuminate\Routing\Controllers\Middleware;
+use Illuminate\Routing\Controllers\HasMiddleware;
 
-class PostController extends Controller
+class PostController extends Controller implements HasMiddleware
 {
+    public static function middleware(): array
+    {
+        return [
+            new Middleware("auth", only: ["create"])
+        ];
+    }
     /**
      * Display a listing of the resource.
      */
@@ -37,6 +46,11 @@ class PostController extends Controller
     public function show(Post $post)
     {
         return view('post.detailPost',compact('post'));
+    }
+
+    public function byCategory(Category $category) {
+
+        return view("post.byCategory", ["posts"=> $category->posts, "category"=>$category]);
     }
 
     /**
