@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg bg-body-tertiary">
+<nav class="navbar navCustom navbar-expand-lg bg-body-tertiary">
     <div class="container-fluid">
         <a class="navbar-brand" href="#">Logo</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -32,7 +32,7 @@
                 @auth
                 @if (Auth::user()->is_revisor)
                 <li class="nav-item">
-                    <a class="btn btn-outline-success mx-3 btn-sm position-relative w-sm-25" href="{{route('revisor.index')}}">Dashboard Revisore
+                    <a class="btn btn-success mx-3 btn-sm position-relative w-sm-25" href="{{route('revisor.index')}}">Dashboard Revisore
                         <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">{{ \App\Models\Post::toBeRevisedCount()}}</span>
                     </a>
                     

@@ -1,3 +1,19 @@
 .height-custom{
     min-height: 60vh;
 }
+
+:root { 
+    --colorePrimario:rgb(193, 184, 194);
+    --coloreSecondario:rgb(27, 29, 27);
+    --coloreTerziario:rgb(255, 0, 221);
+    --coloreQuaternario:rgb(139, 132, 144);
+}
+
+
+body{
+    background-color: var(--colorePrimario);
+}
+
+.navCustom{
+    background-color: var(--coloreQuaternario) !important;
+}
