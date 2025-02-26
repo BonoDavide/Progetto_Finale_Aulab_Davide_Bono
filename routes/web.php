@@ -14,8 +14,12 @@ Route::get('/post/detail/{post}', [PostController::class, 'show'])->name('post.d
 Route::get('/category/{category}', [PostController::class, 'byCategory'])->name('byCategory');
 
 // rotte revisor
-Route::get('/revisor/index', [RevisorController::class, 'index'])->name('revisor.index');
+Route::get('/revisor/index', [RevisorController::class, 'index'])->middleware('isRevisor')->name('revisor.index');
 
 Route::patch('/accept/{post}',[RevisorController::class, 'accept'])->name('accept');
 
 Route::patch('/reject/{post}',[RevisorController::class, 'reject'])->name('reject');
+
+Route::get('/revisor/request',[RevisorController::class, 'becomeRevisor'])->middleware('auth')->name('become.revisor');
+//rotta del footer per revisor
+Route::get('/make/revisor/{user}', [RevisorController::class, 'makeRevisor'])->name('make.revisor');

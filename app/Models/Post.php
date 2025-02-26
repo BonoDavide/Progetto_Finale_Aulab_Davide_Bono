@@ -24,4 +24,8 @@ class Post extends Model
         $this->save();
         return true;
     }
+
+    public static function toBeRevisedCount(){
+        return Post::where('is_accepted', null)->count();
+    }
 }

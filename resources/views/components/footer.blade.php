@@ -11,6 +11,14 @@
         <li><a href="/privacy">Privacy Policy</a></li>
         <li><a href="/terms">Termini e Condizioni</a></li>
       </ul>
+
+      <div class="col-md-5 offset-md-1 mb-3 text-center">
+        <h5>Vuoi diventare revisore?</h5>
+        <p>Cliccando il bottone sottostante farai richiesta al nostro admin</p>
+    
+        <a href="{{ route('become.revisor') }}" class="btn btn-success">Diventa revisore</a>
+    </div>
+    
     </div>
     <div class="footer-section">
       <h4>Seguici</h4>

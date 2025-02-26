@@ -10,7 +10,7 @@ class IndexPost extends Component
     public function render()
     {
        
-        $posts = Post::orderBy('created_at', 'desc')->get();
+        $posts = Post::where('is_accepted', true)->orderBy('created_at', 'desc')->paginate(10);
        /*  $posts = array_reverse($posts->toArray()); */
         return view('livewire.index-post',compact('posts'));
 
