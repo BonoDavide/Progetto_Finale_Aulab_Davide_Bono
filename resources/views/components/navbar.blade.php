@@ -33,7 +33,7 @@
                 @if (Auth::user()->is_revisor)
                 <li class="nav-item">
                     <a class="btn btn-outline-success mx-3 btn-sm position-relative w-sm-25" href="{{route('revisor.index')}}">Dashboard Revisore
-                        <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">">{{ \App\Models\Post::toBeRevisedCount()}}</span>
+                        <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">{{ \App\Models\Post::toBeRevisedCount()}}</span>
                     </a>
                     
                 </li>
