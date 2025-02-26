@@ -12,5 +12,10 @@ class PublicController extends Controller
         return view("welcome",compact("posts"));
     }
 
+    public function searchPost(Request $request){
+        $query = $request->input('query');
+        $posts = Post::search($query)->where('is_accepted', true)->paginate(10);
+        return view("post.searched",["posts"=>$posts, "query"=>$query] );
+    }
     
 }

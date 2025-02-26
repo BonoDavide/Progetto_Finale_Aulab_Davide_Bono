@@ -23,3 +23,5 @@ Route::patch('/reject/{post}',[RevisorController::class, 'reject'])->name('rejec
 Route::get('/revisor/request',[RevisorController::class, 'becomeRevisor'])->middleware('auth')->name('become.revisor');
 //rotta del footer per revisor
 Route::get('/make/revisor/{user}', [RevisorController::class, 'makeRevisor'])->name('make.revisor');
+//Rotta per il search
+Route::get('/search/Post', [PublicController::class, 'searchPost'])->name('post.search');

@@ -4,9 +4,12 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
+use Laravel\Scout\Searchable;
 
 class Post extends Model
 {
+    use Searchable;
+
     protected $fillable = ['title', 'price', 'description', 'category_id'];
 
     // relazione 1-N con modello User
@@ -27,5 +30,14 @@ class Post extends Model
 
     public static function toBeRevisedCount(){
         return Post::where('is_accepted', null)->count();
+    }
+
+    public function toSearchableArray(){
+        return [
+            'id'=>$this->id,
+            'title'=>$this->title,
+            'description'=>$this->description,
+            'category'=>$this->category,
+        ];
     }
 }
