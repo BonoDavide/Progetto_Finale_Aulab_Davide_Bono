@@ -15,3 +15,7 @@ Route::get('/category/{category}', [PostController::class, 'byCategory'])->name(
 
 // rotte revisor
 Route::get('/revisor/index', [RevisorController::class, 'index'])->name('revisor.index');
+
+Route::patch('/accept/{post}',[RevisorController::class, 'accept'])->name('accept');
+
+Route::patch('/reject/{post}',[RevisorController::class, 'reject'])->name('reject');

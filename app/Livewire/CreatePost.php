@@ -6,17 +6,19 @@ use Livewire\Component;
 use App\Models\Category;
 use Livewire\Attributes\Validate;
 use Illuminate\Support\Facades\Auth;
-
+// #[Validate("required", message: "Inserisci il titolo del film")]
 
 class CreatePost extends Component
 {
-    #[Validate("required|min:5")]
+    #[Validate("required", message:"inserisci titolo dell articolo")]
     public $title;
-    #[Validate("required|numeric")]
+    
+    #[Validate("required", message:"inserisci una cifra del prodotto")]
+    #[Validate("numeric", message: "Inserisci un numero valido ")]
     public $price;
-    #[Validate("required|min:10")]
+    #[Validate("required", message:"inserisci una descrizione")]
     public $description;
-    #[Validate("required")]
+    #[Validate("required", message:"seleziona un a categoria")]
     public $category;
 
     public function createPost()

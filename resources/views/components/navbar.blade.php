@@ -30,6 +30,12 @@
                     </ul>
                 </li>
                 @auth
+                @if (Auth::user()->is_revisor)
+                <li class="nav-item">
+                    <a class="btn btn-outline-success mx-3 btn-sm position-relative w-sm-25" href="{{route('revisor.index')}}">Dashboard Revisore</a>
+                </li>
+                @endif
+
                 <li class="nav-item">
                     <a class="btn btn-primary mx-3" href="{{route('post.create')}}">Inserisci Annuncio</a>
                 </li>

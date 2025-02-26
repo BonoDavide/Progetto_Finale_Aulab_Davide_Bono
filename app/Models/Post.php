@@ -17,4 +17,11 @@ class Post extends Model
     public function category():BelongsTo{
         return $this->belongsTo(Category::class);
     }
+    
+    public function setAccepted($value)
+    {
+        $this -> is_accepted=$value;
+        $this->save();
+        return true;
+    }
 }

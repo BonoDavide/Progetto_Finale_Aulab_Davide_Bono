@@ -3,9 +3,11 @@
         <div class="row">
             <div class="col-12">
                 <h1>Registrati</h1>
+                <x-error></x-error>
             </div>
         </div>
     </div> 
+
     
     <div class="container">
         <div class="row">
@@ -31,12 +33,12 @@
                 </div>
                 <div class="form-group mt-3">
                     <label for="password">Password</label>
-                    <input id="password" type="password" class="form-control" name="password" required>
+                    <input id="password" type="password" class="form-control" name="password" >
                 </div>
                 <div class="form-group mt-3">
                     <label for="password_confirmation">Conferma Password</label>
                     <input id="password_confirmation" type="password" class="form-control"
-                    name="password_confirmation" required>
+                    name="password_confirmation" >
                 </div>
                 
                 <button type="submit" class="btn btn-danger">Submit</button>
