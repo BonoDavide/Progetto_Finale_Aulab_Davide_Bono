@@ -11,11 +11,11 @@
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link" href="{{route('post.indexPost')}}">Catalogo annunci</a>
+                    <a class="nav-link" href="{{route('post.indexPost')}}">{{__("ui.annunci")}}</a>
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Categorie
+                        {{__("ui.allCategories")}}
                     </a>
                     <ul class="dropdown-menu">
                         @foreach ($categories as $category)     
@@ -40,30 +40,33 @@
                 @endif
 
                 <li class="nav-item">
-                    <a class="btn btn-primary mx-3" href="{{route('post.create')}}">Inserisci Annuncio</a>
+                    <a class="btn btn-primary mx-3" href="{{route('post.create')}}">{{__("ui.inserisciAnnuncio")}}</a>
                 </li>
                 <li class="nav-item">
                 <form action="{{route('logout')}}" method="POST">
                     @csrf
-                    <button type="submit" class="btn btn-danger">Logout</button>
+                    <button type="submit" class="btn btn-danger">{{__("ui.logout")}}</button>
                 </form>
                 </li>
                 @else
                 <li class="nav-item">
-                    <a class="nav-link" href="{{route('login')}}">Accedi</a>
+                    <a class="nav-link" href="{{route('login')}}">{{__("ui.login")}}</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="{{route('register')}}">Registrati</a>
+                    <a class="nav-link" href="{{route('register')}}">{{__("ui.register")}}</a>
                 </li>  
                 @endauth
               
     
           
         </ul>
+        <x-_locale lang="it" />
+        <x-_locale lang="en" />
+        <x-_locale lang="es" />
         <form class="d-flex ms-auto" role="search" action="{{route('post.search')}}" method="GET">
             <div class="input-group">
-                <input class="form-control me-2" name="query" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success input-group-text" type="submit">Search</button>
+                <input class="form-control me-2" name="query" type="search" placeholder="{{__("ui.search")}}" aria-label="Search">
+                <button class="btn btn-outline-success input-group-text" type="submit">{{__("ui.search")}}</button>
             </div>
         </form>
     </div>

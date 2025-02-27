@@ -25,3 +25,6 @@ Route::get('/revisor/request',[RevisorController::class, 'becomeRevisor'])->midd
 Route::get('/make/revisor/{user}', [RevisorController::class, 'makeRevisor'])->name('make.revisor');
 //Rotta per il search
 Route::get('/search/Post', [PublicController::class, 'searchPost'])->name('post.search');
+
+//Rotta language
+Route::post('/lingua/{lang}', [PublicController::class, 'setLanguage'])->name('setLocale');

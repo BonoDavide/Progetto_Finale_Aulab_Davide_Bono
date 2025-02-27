@@ -17,5 +17,10 @@ class PublicController extends Controller
         $posts = Post::search($query)->where('is_accepted', true)->paginate(10);
         return view("post.searched",["posts"=>$posts, "query"=>$query] );
     }
+
+    public function setLanguage($lang){
+        session()->put('locale', $lang);
+        return redirect()->back();
+    }
     
 }
