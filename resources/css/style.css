@@ -17,3 +17,11 @@ body{
 .navCustom{
     background-color: var(--coloreQuaternario) !important;
 }
+
+.img-preview{
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 120px;
+    width: 120px;
+}

@@ -2,15 +2,17 @@
 
 namespace App\Models;
 
-use Illuminate\Database\Eloquent\Model;
-use Illuminate\Database\Eloquent\Relations\BelongsTo;
+use App\Models\Image;
 use Laravel\Scout\Searchable;
+use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Relations\HasMany;
+use Illuminate\Database\Eloquent\Relations\BelongsTo;
 
 class Post extends Model
 {
     use Searchable;
 
-    protected $fillable = ['title', 'price', 'description', 'category_id'];
+    protected $fillable = ['title', 'price', 'description', 'category_id', "user_id", 'is_accepted'];
 
     // relazione 1-N con modello User
     public function user():BelongsTo{
@@ -39,5 +41,9 @@ class Post extends Model
             'description'=>$this->description,
             'category'=>$this->category,
         ];
+        
+    }public function images() : HasMany
+    {
+        return $this->hasMany(Image::class);
     }
 }

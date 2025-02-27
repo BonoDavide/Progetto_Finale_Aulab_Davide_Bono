@@ -13,11 +13,7 @@
                             {{ session('message') }}
                         </div>
                     </div>
-                    @endif
-                    
-                   
-
-              
+                    @endif   
             </div>
         </div>
         @if ($post_to_check)
