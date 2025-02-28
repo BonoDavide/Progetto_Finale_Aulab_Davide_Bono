@@ -39,13 +39,13 @@ class CreatePost extends Component
             'price' => $this->price,
             'description' => $this->description,
             'category_id' => $this->category,
-            "user_id" => Auth::user()->id,
+            "user_id" => Auth::id()
         ]);
 
         if(count($this->images) > 0){
             foreach($this->images as $image){
                 $newFileName = "posts/{$this->post->id}";
-                $newImage = $this->post->images()->create(['path' =>$image->store($newFileName, 'public')]);
+                $newImage = $this->post->images()->create(['path' => $image->store($newFileName, 'public')]);
                 dispatch(new ResizeImage($newImage->path, 300, 300));
                 // $this->post->images()->create([
                 //     'path' => $image->store('images', 'public')
