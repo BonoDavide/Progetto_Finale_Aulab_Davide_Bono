@@ -25,3 +25,82 @@ body{
     height: 120px;
     width: 120px;
 }
+
+
+/* navbar */
+.transition{
+    transition: 1.5s!important;
+}
+
+
+.nav-scrolled{
+    margin: 5vh 15vw ;
+    border: 2px solid var(--coloreTerziario);
+    border-radius: 10px;
+    backdrop-filter: blur(7px);
+    background-color: rgba(139, 132, 144, 0.5)!important; 
+    /* width: 50vw; */
+    position: fixed ;
+    top:0;
+    left:0;
+    /* left: 50%; */
+    /* transform: translateX(-50%); */
+    z-index: 1;
+}
+
+.logo{
+    width: 60px;
+    height: 60px;
+}
+
+
+/* card */
+.card{
+    background-color: var(--coloreQuaternario);
+    color: var(--colorePrimario);
+    border: 2px solid var(--coloreTerziario);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(139,132,144,0.5)!important;
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.card-img-top{
+    border-bottom: 2px solid var(--coloreTerziario);
+}
+
+.card-text{
+    color: var(--coloreTerziario);
+}
+
+.btn-primary{
+    background-color: var(--coloreTerziario);
+    border-color: var(--coloreSecondario);
+    transition: background-color 0.3s ease-in-out, border-color 0.3s ease-in-out;
+}
+
+.btn-primary:hover{
+    background-color: var(--coloreSecondario);
+    border-color: var(--coloreTerziario);
+}
+
+
+
+/* media query */
+@media screen and (max-width: 991px){ 
+    /* mq navbar */
+.nav-scrolled{
+    margin: 5vh 15vw;
+    border: 2px solid var(--coloreTerziario);
+    border-radius: 10px;
+    backdrop-filter: blur(7px);
+    background-color: rgba(139, 132, 144, 0.5)!important; 
+    position: fixed;
+    z-index: 1;
+    }
+    /* mq card */
+.card{
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(139,132,144,0.5)!important;
+    }
+}

@@ -1,17 +1,20 @@
-<nav class="navbar navCustom navbar-expand-lg bg-body-tertiary">
+<nav class="navbar navCustom navbar-expand-lg  transition">
     <div class="container-fluid">
-        <a class="navbar-brand" href="#">Logo</a>
+        <a class="navbar-brand " href="{{route('homePage')}}">
+            <img class="logo" src="{{asset('/img/404.png')}}" alt="logo 404">
+        </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="{{route('homePage')}}">Home</a>
-                </li>
 
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav  mb-2 mb-lg-0">
+                {{-- <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="{{route('homePage')}}">Home</a>
+                </li> --}}
+                
                 <li class="nav-item">
-                    <a class="nav-link" href="{{route('post.indexPost')}}">{{__("ui.annunci")}}</a>
+                    <a class="nav-link " href="{{route('post.indexPost')}}">{{__("ui.annunci")}}</a>
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -19,12 +22,12 @@
                     </a>
                     <ul class="dropdown-menu">
                         @foreach ($categories as $category)     
-                            <li>
-                                <a class="dropdown-item" href="{{route("byCategory", ["category"=>$category])}}">{{$category->name}}</a>
-                            </li>
-                            @if (!$loop->last)
-                                <hr class="dropdown-divider">
-                            @endif
+                        <li>
+                            <a class="dropdown-item" href="{{route("byCategory", ["category"=>$category])}}">{{$category->name}}</a>
+                        </li>
+                        @if (!$loop->last)
+                        <hr class="dropdown-divider">
+                        @endif
                         @endforeach
                         
                     </ul>
@@ -38,15 +41,17 @@
                     
                 </li>
                 @endif
-
+                
                 <li class="nav-item">
-                    <a class="btn btn-primary mx-3" href="{{route('post.create')}}">{{__("ui.inserisciAnnuncio")}}</a>
+                    <a class="btn btn-primary mx-3 " href="{{route('post.create')}}">{{__("ui.inserisciAnnuncio")}}</a>
                 </li>
                 <li class="nav-item">
-                <form action="{{route('logout')}}" method="POST">
-                    @csrf
-                    <button type="submit" class="btn btn-danger">{{__("ui.logout")}}</button>
-                </form>
+                    <form action="{{route('logout')}}" method="POST">
+                        @csrf
+                        <button type="submit" class="btn btn-danger ">{{__("")}}
+                            <i class="fa-duotone fa-solid fa-right-from-bracket"></i>
+                        </button>
+                    </form>
                 </li>
                 @else
                 <li class="nav-item">
@@ -56,21 +61,30 @@
                     <a class="nav-link" href="{{route('register')}}">{{__("ui.register")}}</a>
                 </li>  
                 @endauth
-              
-    
+                
+                
+                
+            </ul>
           
-        </ul>
-        <x-_locale lang="it" />
-        <x-_locale lang="en" />
-        <x-_locale lang="es" />
-        <form class="d-flex ms-auto" role="search" action="{{route('post.search')}}" method="GET">
-            <div class="input-group">
-                <input class="form-control me-2" name="query" type="search" placeholder="{{__("ui.search")}}" aria-label="Search">
-                <button class="btn btn-outline-success input-group-text" type="submit">{{__("ui.search")}}</button>
-            </div>
-        </form>
+
+             <form class="d-flex ms-auto" role="search" action="{{route('post.search')}}" method="GET">
+                <div class="input-group">
+                    <input class="form-control me-2" name="query" type="search" placeholder="{{__("ui.search")}}" aria-label="Search">
+                    <button class="btn btn-outline-success input-group-text" type="submit">{{__("ui.search")}}</button>
+                </div>
+            </form>
+        </div>
+        
+        <div class="dropstart ms-3">
+            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <i class="fa-duotone fa-solid fa-flag"></i>
+            </button>
+            <ul class="dropdown-menu">
+              <li><button class="dropdown-item" type="button"><x-_locale lang="it" />IT</button></li>
+              <li><button class="dropdown-item" type="button"><x-_locale lang="en" />EN</button></li>
+              <li><button class="dropdown-item" type="button"><x-_locale lang="es" />ES</button></li>
+            </ul>
+          </div>
+        
     </div>
-  
-    
-</div>
 </nav>
