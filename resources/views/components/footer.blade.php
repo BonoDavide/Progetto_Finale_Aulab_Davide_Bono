@@ -3,10 +3,10 @@
     <div class="container">
       <div class="row justify-content-center ">
           <div class="col-6 pt-5 mb-3 text-center  ">
-              <h5>Vuoi diventare revisore?</h5>
-              <p>Cliccando il bottone sottostante farai richiesta al nostro admin</p>
+              <h5>{{__('ui.become')}}</h5>
+              <p>{{__('ui.pBecome')}}</p>
 
-              <a href="{{ route('become.revisor') }}" class="btn btn-success">Diventa revisore</a>
+              <a href="{{ route('become.revisor') }}" class="btn btn-success">{{__('ui.revisor')}}</a>
           </div>
       </div>
   </div>

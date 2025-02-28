@@ -2,7 +2,7 @@
     <div class="container">
         <div class="row">
             <div class="col-12 pt-5">
-                <h1 class="text-center">Benvenuto!</h1>
+                <h1 class="text-center"> {{__('ui.hello')}}</h1>
             </div>
         </div>
         @if (session()->has('errorMessage'))
