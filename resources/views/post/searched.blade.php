@@ -10,7 +10,7 @@
         </div>
         <div class="row height-custom justify-content-center align-items-center">
             @forelse ($posts as $post)
-                <div class="col-12 col-md-3">
+                <div class="col-4 col-md-3">
                     <x-card :post="$post"></x-card>
                 </div>
 

@@ -34,7 +34,7 @@
                     </div>
 
                     <div class="pt-3">
-                        <button type="submit" class="btn btn-danger">{{__("ui.registerTitle")}}</button>
+                        <button type="submit" class="btn btn-primary">{{__("ui.registerTitle")}}</button>
                     </div>
                 </form>
             </div>
