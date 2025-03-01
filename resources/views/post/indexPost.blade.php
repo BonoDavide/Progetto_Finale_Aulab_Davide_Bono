@@ -1,8 +1,8 @@
 <x-layout>
     <div class="container">
-        <div class="row">
-            <div class="col-12 text-center my-4">
-                <h2>Ultimi Articoli</h2>
+        <div class="row pt-5 pb-5">
+            <div class="col-12 text-center">
+                <h1 class="display-4">{{__("ui.allPosts")}}</h1>
             </div>   
         </div>                       
     </div>
