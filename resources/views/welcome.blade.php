@@ -16,9 +16,9 @@
         </div>
         @endif
         <div>
-            <h4 class="text-center pt-5">{{__('ui.latestPosts')}}:</h4>
+            <h3 class="text-center pt-5">{{__('ui.latestPosts')}}:</h3>
         </div>
-        <div class="row border border-2 border-dark lastPosts justify-content-evenly pt-3">           
+        <div class="row border border-2 border-dark lastPosts justify-content-evenly pt-3 borderForm">           
             @foreach ($posts as $post)
             <div class="col-4 my-4 d-flex justify-content-center">
                 <x-card :post="$post"></x-card>
