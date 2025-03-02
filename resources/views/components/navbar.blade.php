@@ -1,4 +1,4 @@
-<nav class="navbar navCustom navbar-expand-lg  transition">
+<nav class="navbar navCustom navbar-expand-lg transition">
     <div class="container-fluid">
         <a class="navbar-brand ps-2 pe-2" href="{{ route('homePage') }}">
             <img class="logo" src="{{ asset('/img/404.png') }}" alt="logo 404">
