@@ -1,9 +1,9 @@
 <div class="pt-3">
     <div class="container border rounded-2 borderForm p-4 border-dark border-2">
-        <div class="row">
+        <div class="row justify-content-center">
             <div class="col-12 col-md-8">
                 @if (session('status'))
-                    <div class="card bg-light alert text-success text-uppercase ">
+                    <div class="card bg-light alert text-success text-uppercase text-center">
                         {{ session('status') }}
                     </div>
                 @endif
