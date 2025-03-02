@@ -5,16 +5,20 @@
                 <h1 class="text-center textShadow display-3 pb-3"> {{__('ui.hello')}}</h1>
             </div>
         </div>
-        @if (session()->has('errorMessage'))
-        <div class="alert alert-danger text-center shadow rounded w-50">
-            {{ session('errorMessage') }}
+        <div class="row justify-content-center">
+            <div class="col-12">
+                @if (session()->has('errorMessage'))
+                <div class="alert alert-danger text-center shadow rounded w-50 mx-auto">
+                    {{ session('errorMessage') }}
+                </div>
+                @endif
+                @if (session()->has('message'))
+                <div class="alert alert-success text-center shadow rounded w-50 mx-auto">
+                    {{ session('message') }}
+                </div>
+                @endif
+            </div>
         </div>
-        @endif
-        @if (session()->has('message'))
-        <div class="alert alert-danger text-center shadow rounded w-50">
-            {{ session('message') }}
-        </div>
-        @endif
         <div>
             <h3 class="text-center pt-5">{{__('ui.latestPosts')}}:</h3>
         </div>

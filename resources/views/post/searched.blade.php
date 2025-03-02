@@ -2,13 +2,13 @@
     <div class="container">
         <div class="row pt-5 justify-content-center align-items-center text-center">
             <div class="col-12">
-                <h1 class="display-4">Risultati della ricerca<span class="fst-italic">
+                <h1 class="display-5 pb-5">Risultati della ricerca: <span class="fst-italic">
                         {{ $query }}
                     </span>
                 </h1>
             </div>
         </div>
-        <div class="row height-custom justify-content-center align-items-center">
+        <div class="row height-custom justify-content-center align-items-center pb-3">
             @forelse ($posts as $post)
                 <div class="col-4 col-md-3">
                     <x-card :post="$post"></x-card>
