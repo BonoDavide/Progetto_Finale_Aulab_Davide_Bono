@@ -1,9 +1,9 @@
 <?php
 return [
     'login' => 'Login',
-    'hello' => 'Hello',
+    'hello' => 'Welcome to 404 Brain Not Found',
     'allArticles' => 'All the articles',
-    'allPosts' => 'All the posts',
+    'allPosts' => 'Catalogue of Announcements',
     'register' => 'Register',
     'logout' => 'Logout',
     'profile' => 'Profile',
@@ -15,5 +15,20 @@ return [
     'become' => 'Do you want to become a reviewer?',
     'revisor' => 'Become a reviewer',
     'pBecome' => 'Click the button below to make a request to our admin',
-    
+    'revisorDashboard' => 'Revisor Dashboard',
+    'latestPosts' => 'Latest Announcements',
+    'loginTitle' => 'Sign in',
+    'loginEmail' => 'Email Address',
+    'loginPass' => 'Password',
+    'registerTitle' => 'Register',
+    'registerEmail' => 'Email Address',
+    'registerPass' => 'Password',
+    'registerConfPass' => 'Confirm Password',
+    'registerUserName' => 'Username',
+    'createH1' => 'Post an Announcement',
+    'createTitle' => 'Title',
+    'createPrice' => 'Price',
+    'createCat' => 'Select Category',
+    'createDesc' => 'Description',
+    'createButton' => 'Post',
 ];

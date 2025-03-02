@@ -1,16 +1,16 @@
 <footer class="bg-body-tertiary navCustom text-center">
     <!-- Grid container -->
     <div class="container">
-      <div class="row justify-content-center ">
-          <div class="col-6 pt-5 mb-3 text-center  ">
-              <h5>{{__('ui.become')}}</h5>
-              <p>{{__('ui.pBecome')}}</p>
+        <div class="row justify-content-center">
+            <div class="col-6 pt-5 mb-3 text-center">
+                <h5>{{ __('ui.become') }}</h5>
+                <p>{{ __('ui.pBecome') }}</p>
 
-              <a href="{{ route('become.revisor') }}" class="btn btn-success">{{__('ui.revisor')}}</a>
-          </div>
-      </div>
-  </div>
-  
+                <a href="{{ route('become.revisor') }}" class="btn btn-success">{{ __('ui.revisor') }}</a>
+            </div>
+        </div>
+    </div>
+
     <div class="container p-4 pb-0">
         <!-- Section: Social media -->
         <section class="mb-4">

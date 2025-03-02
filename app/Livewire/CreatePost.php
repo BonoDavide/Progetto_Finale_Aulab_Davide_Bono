@@ -66,6 +66,7 @@ class CreatePost extends Component
         $this->description= "";
         $this->category= "";
         $this->images = [];
+        $this->temporary_images = [];
     }
 
     public function updatedTemporaryImages(){

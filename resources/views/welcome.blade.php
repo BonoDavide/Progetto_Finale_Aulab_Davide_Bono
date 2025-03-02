@@ -1,8 +1,8 @@
 <x-layout>
     <div class="container">
-        <div class="row">
-            <div class="col-12 pt-5">
-                <h1 class="text-center"> {{__('ui.hello')}}</h1>
+        <div class="row pt-5">
+            <div class="col-12">
+                <h1 class="text-center textShadow display-3 pb-3"> {{__('ui.hello')}}</h1>
             </div>
         </div>
         @if (session()->has('errorMessage'))
@@ -15,8 +15,10 @@
             {{ session('message') }}
         </div>
         @endif
-        
-        <div class="row justify-content-evenly">           
+        <div>
+            <h3 class="text-center pt-5">{{__('ui.latestPosts')}}:</h3>
+        </div>
+        <div class="row border border-2 border-dark lastPosts justify-content-evenly pt-3 borderForm">           
             @foreach ($posts as $post)
             <div class="col-4 my-4 d-flex justify-content-center">
                 <x-card :post="$post"></x-card>

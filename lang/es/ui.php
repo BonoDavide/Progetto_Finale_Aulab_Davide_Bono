@@ -1,8 +1,8 @@
 <?php
 return [
-    'hello' => 'Hola',
+    'hello' => 'Bienvenido a 404 Brain Not Found',
     'login' => 'Iniciar sesion',
-    'allPosts' => 'Todos los posts',
+    'allPosts' => 'Catálogo de Anuncios',
     'allArticles' => 'Todos los articulos',
     'allCategories' => 'Todas las categorias',
     'register' => 'Registrarse',
@@ -15,5 +15,20 @@ return [
     'become' => 'Quieres ser revisor?',
     'revisor' => 'Ser revisor',
     'pBecome' => 'Haga clic en el botón de abajo para hacer una solicitud al nuestro admin',
-    
+    'revisorDashboard' => 'Panel de control del Revisor',
+    'latestPosts' => 'Ùltimos Anuncios',
+    'loginTitle' => 'Inicia sesión',
+    'loginEmail' => 'Dirección de Email',
+    'loginPass' => 'Password',
+    'registerTitle' => 'Regístrate',
+    'registerEmail' => 'Dirección de Email',
+    'registerPass' => 'Password',
+    'registerConfPass' => 'Confirmación Password',
+    'registerUserName' => 'Nombre de Usuario',
+    'createH1' => 'Publicar un Anuncio',
+    'createTitle' => 'Título',
+    'createPrice' => 'Precio',
+    'createCat' => 'Seleccionar la Categoría',
+    'createDesc' => 'Descripción',
+    'createButton' => 'Publica',
 ];
