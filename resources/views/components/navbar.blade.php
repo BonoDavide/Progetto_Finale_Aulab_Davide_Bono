@@ -78,7 +78,8 @@
                     <input class="form-control me-2" name="query" type="search" placeholder="{{ __('ui.search') }}"
                         aria-label="Search">
                     <button class="btn btn-outline-success input-group-text"
-                        type="submit">{{ __('ui.search') }}</button>
+                        type="submit">
+                        <i class="fa-solid fa-magnifying-glass"></i></button>
                 </div>
             </form>
         </div>
