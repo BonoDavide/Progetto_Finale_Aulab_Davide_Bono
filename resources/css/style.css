@@ -9,9 +9,30 @@ h2 {
     font-family: 'Poppins', sans-serif;
 }
 
+a{
+    color: white !important;
+}
+
 .borderForm {
     border-radius: 1vh !important;
     background-color: var(--coloreForm);
+}
+
+.ul-over-custom{
+    background-color: var(--colorePrimario) !important;
+    /* color: black !important; */
+    /* color: var(--coloreTerziario) !important; */
+}
+
+.ul-over-custom:hover{
+    /* background-color: var(--colorePrimario) !important; */
+    /* color: black !important; */
+    color: var(--coloreTerziario) !important;
+}
+
+
+.bg-custom-s{
+    background-color: var(--coloreSecondario) !important;
 }
 
 .lastPosts {
@@ -27,12 +48,13 @@ h2 {
 }
 
 :root {
-    --colorePrimario: rgb(193, 184, 194);
-    --coloreSecondario: rgb(27, 29, 27);
+    --colorePrimario: rgb(149, 143, 150);
+    --coloreSecondario: rgb(43, 43, 43);
     --coloreTerziario: rgb(212, 0, 255);
     --coloreQuaternario: rgb(139, 132, 144);
     --coloreOmbra: rgba(212, 0, 255, 0.4);
     --coloreForm: rgba(95, 91, 96, 0.2);
+    --bs-link-hover-color-rgb: white;
 }
 
 
@@ -42,7 +64,7 @@ body {
 }
 
 .navCustom {
-    background-color: var(--coloreQuaternario) !important;
+    background-color: var(--coloreSecondario) !important;
 }
 
 .img-preview {
@@ -65,7 +87,7 @@ body {
     border: 2px solid var(--coloreTerziario);
     border-radius: 10px;
     backdrop-filter: blur(7px);
-    background-color: rgba(139, 132, 144, 0.5) !important;
+    background-color: rgba(43, 43, 43, 0.7) !important;
     /* width: 50vw; */
     position: sticky;
     top: 2vh;
@@ -80,11 +102,16 @@ body {
     height: 60px;
 }
 
+.center-ir{
+    position: relative;
+    left: 55%;
+}
+
 
 /* card */
 .card {
-    background-color: var(--coloreQuaternario);
-    color: var(--colorePrimario);
+    background-color: var(--coloreSecondario);
+    color: white;
     border: 2px solid var(--coloreTerziario);
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(139, 132, 144, 0.5) !important;
