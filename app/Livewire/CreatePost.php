@@ -8,6 +8,8 @@ use App\Models\Category;
 use App\Jobs\ResizeImage;
 use Livewire\WithFileUploads;
 use Livewire\Attributes\Validate;
+use App\Jobs\GoogleVisionLabelImage;
+use App\Jobs\GoogleVisionSafeSearch;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\File;
 // #[Validate("required", message: "Inserisci il titolo del film")]
@@ -46,7 +48,9 @@ class CreatePost extends Component
             foreach($this->images as $image){
                 $newFileName = "posts/{$this->post->id}";
                 $newImage = $this->post->images()->create(['path' => $image->store($newFileName, 'public')]);
-                dispatch(new ResizeImage($newImage->path, 300, 300));
+                dispatch(new ResizeImage($newImage->path, 900, 900));
+                dispatch(new GoogleVisionSafeSearch($newImage->id));
+                dispatch(new GoogleVisionLabelImage($newImage->id));
                 // $this->post->images()->create([
                 //     'path' => $image->store('images', 'public')
                 // ]);
