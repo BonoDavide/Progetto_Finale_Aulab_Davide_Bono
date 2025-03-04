@@ -55,7 +55,7 @@ class CreatePost extends Component
             File::deleteDirectory(storage_path('/app/livewire-tmp'));
         }
 
-        session()->flash('success', 'Annuncio creato con successo!');
+        session()->flash('status', 'Annuncio creato con successo!');
         
         $this->cleanForm();
     }
@@ -66,6 +66,7 @@ class CreatePost extends Component
         $this->description= "";
         $this->category= "";
         $this->images = [];
+        $this->temporary_images = [];
     }
 
     public function updatedTemporaryImages(){

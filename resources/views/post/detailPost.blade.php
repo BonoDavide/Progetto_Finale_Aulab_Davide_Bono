@@ -1,47 +1,47 @@
 <x-layout>
     <div class="container">
-        <div class="row height-custom justify-content-center py-5">
-            <div class="col-12 text-center my-5">
-                <h1>Pagina dettaglio di {{$post->title}}</h1>
+        <div class="row height-custom justify-content-between pb-3 align-items-center">
+            <div class="col-12 text-center my-5 pt-2 pb-5">
+                <h1 class="display-4">Pagina dettaglio di {{ $post->title }}</h1>
             </div>
-            <div class="col-12 col-md-6 mb-3">
-              @if ($post->images->count() > 0)
-                  <div id="carouselExample" class="carousel slide">
-                      <div class="carousel-inner">
-                          @foreach ($post->images as $key => $image)
-                              <div class="carousel-item @if ($loop->first) active @endif">
-                                  <img src="{{ $image->getUrl(300, 300) }}" class="d-block w-100 rounded shadow"
-                                      alt="Immagine {{ $key + 1 }} dell'articolo {{ $post->title }}">
-                              </div>
-                          @endforeach
-                      </div>
-          
-                      @if ($post->images->count() > 1)
-                          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample"
-                              data-bs-slide="prev">
-                              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                              <span class="visually-hidden">Previous</span>
-                          </button>
-                          <button class="carousel-control-next" type="button" data-bs-target="#carouselExample"
-                              data-bs-slide="next">
-                              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                              <span class="visually-hidden">Next</span>
-                          </button>
-                      @endif
-                  </div>
-              @else
-                  <img src="https://picsum.photos/300" alt="Nessuna foto inserita dall'utente">
-              @endif
-          </div>
-            <div class="col-12 col-md-6 text-center">                                                 
-                <h2 class="card-title display-5 mb-3">Titolo: {{ $post->title }}</h2>
+            <div class="col-12 border border-dark border-2 p-0 rounded col-md-5">
+                @if ($post->images->count() > 0)
+                    <div id="carouselExample" class="carousel slide">
+                        <div class="carousel-inner">
+                            @foreach ($post->images as $key => $image)
+                                <div class="carousel-item @if ($loop->first) active @endif">
+                                    <img src="{{ $image->getUrl(300, 300) }}" class="d-block w-100 rounded shadow"
+                                        alt="Immagine {{ $key + 1 }} dell'articolo {{ $post->title }}">
+                                </div>
+                            @endforeach
+                        </div>
+
+                        @if ($post->images->count() > 1)
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample"
+                                data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample"
+                                data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        @endif
+                    </div>
+                @else
+                    <img src="https://picsum.photos/300" alt="Nessuna foto inserita dall'utente">
+                @endif
+            </div>
+            <div class="col-12 col-md-5 text-center">
+                <h2 class="card-title pb-5">Titolo: {{ $post->title }}</h2>
                 <div class="d-flex flex-column justify-content-center">
-                    <h4 class="card-title mb-3">Prezzo: {{ $post->price }}€</h4>
-                    <h5 class="card-title mb-3">Categoria: {{ $post->category->name }}</h5>
-                    <h5 class="card-title mb-3">Descrizione: {{ $post->description }}</h5>                    
+                    <h4 class="card-title pb-5">Prezzo: {{ $post->price }}€</h4>
+                    <h5 class="card-title pb-5">Categoria: {{ $post->category->name }}</h5>
+                    <h5 class="card-title pb-5">Descrizione: {{ $post->description }}</h5>
 
                 </div>
             </div>
-          </div>
+        </div>
     </div>
 </x-layout>
