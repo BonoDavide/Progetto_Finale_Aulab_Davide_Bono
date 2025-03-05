@@ -13,7 +13,7 @@ use App\Jobs\GoogleVisionSafeSearch;
 use App\Jobs\RemoveFaces;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\File;
-// #[Validate("required", message: "Inserisci il titolo del film")]
+
 
 class CreatePost extends Component
 {
