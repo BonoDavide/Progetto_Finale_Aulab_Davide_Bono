@@ -11,7 +11,6 @@
 
 -header?
 -modificare colore categorie sulle card
--sistemare la validaione della categoria nel form di 'inserisci annuncio'
 -sistemare view del rivisore
 -sistemare bottoni (colore)
 

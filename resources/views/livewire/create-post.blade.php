@@ -33,6 +33,9 @@
                         <option value="{{ $category->id }}">{{ $category->name }}</option>
                     @endforeach
                 </select>
+                @error('category')
+                    <p class="fst-italic text-danger">{{ $message }}</p>
+                @enderror
             </div>
             <div class="form-floating mb-3">
                 <textarea wire:model.live='description' class="form-control" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
