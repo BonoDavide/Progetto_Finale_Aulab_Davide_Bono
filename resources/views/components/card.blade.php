@@ -1,5 +1,5 @@
 <div class="card border-3" style="width: 18rem;">
-    <img src="{{ $post->images->isNotEmpty() ? $post->images->first()->getUrl(300, 300) : 'https://picsum.photos/200' }}"
+    <img src="{{ $post->images->isNotEmpty() ? $post->images->first()->getUrl(900, 900) : 'https://picsum.photos/200' }}"
         class="card-img-top" alt="Immagine dell'articolo {{ $post->title }}">
 
     <div class="card-body">
