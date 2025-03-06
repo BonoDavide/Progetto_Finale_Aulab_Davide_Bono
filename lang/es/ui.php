@@ -1,6 +1,6 @@
 <?php
 return [
-    'hello' => 'Bienvenido a 404 Brain Not Found',
+    'hello' => 'Bienvenido a ',
     'login' => 'Iniciar sesion',
     'allPosts' => 'Catálogo de Anuncios',
     'allArticles' => 'Todos los articulos',

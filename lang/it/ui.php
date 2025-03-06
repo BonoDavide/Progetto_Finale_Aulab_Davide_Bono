@@ -1,7 +1,7 @@
 <?php
 return
 [
-    'hello' => 'Benvenuti in 404 Brain Not Found',
+    'hello' => 'Benvenuti in ',
     'login' => 'Accedi',
     'allPosts' => 'Catalogo Annunci',
     'allArticles' => 'Tutti gli articoli',

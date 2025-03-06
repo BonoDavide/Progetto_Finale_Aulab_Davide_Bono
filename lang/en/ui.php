@@ -1,7 +1,7 @@
 <?php
 return [
     'login' => 'Login',
-    'hello' => 'Welcome to 404 Brain Not Found',
+    'hello' => 'Welcome to ',
     'allArticles' => 'All the articles',
     'allPosts' => 'Catalogue of Announcements',
     'register' => 'Register',

@@ -12,14 +12,14 @@
 
         <form wire:submit='createPost'>
             <div class="mb-1">
-                <label class="form-label">{{__("ui.createTitle")}}</label>
+                <label class="form-label">{{__("ui.createTitle")}}:</label>
                 <input wire:model.live='title' type="text" class="form-control">
                 @error('title')
                     <p class="fst-italic text-danger">{{ $message }}</p>
                 @enderror
             </div>
             <div class="mb-3">
-                <label class="form-label">{{__("ui.createPrice")}}</label>
+                <label class="form-label">{{__("ui.createPrice")}} €: </label>
                 <input wire:model.live='price' type="numeric" class="form-control">
                 @error('price')
                     <p class="fst-italic text-danger">{{ $message }}</p>

@@ -2,7 +2,7 @@
     <div class="container">
         <div class="row pt-5">
             <div class="col-12">
-                <h1 class="text-center textShadow display-3 pb-3"> {{__('ui.hello')}}</h1>
+                <h1 class="text-center textShadow display-3 pb-3"> {{__('ui.hello')}} ByteFlux – Il flusso continuo dell’innovazione</h1>
             </div>
         </div>
         <div class="row justify-content-center">
