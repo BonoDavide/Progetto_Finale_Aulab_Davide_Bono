@@ -13,6 +13,7 @@
 </head>
 <body>
     <x-navbar></x-navbar>
+    <x-header></x-header>
     {{$slot}}
 
     {{-- piccolo div per lasciare spazio prima del footer --}}
