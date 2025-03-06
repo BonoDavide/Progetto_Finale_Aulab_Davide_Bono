@@ -11,34 +11,48 @@
         </div>
     </div>
 
-    <div class="container p-4 pb-0">
+    <section class="container cont-footer">
         <!-- Section: Social media -->
-        <section class="mb-4">
-            <!-- Facebook -->
-            <a data-mdb-ripple-init class="btn text-white btn-floating m-1" style="background-color: #3b5998;"
-                href="{{ route('homePage') }}" role="button"><i class="fab fa-facebook-f"></i></a>
-
-            <!-- Twitter -->
-            <a data-mdb-ripple-init class="btn text-white btn-floating m-1" style="background-color: #55acee;"
-                href="{{ route('homePage') }}" role="button"><i class="fab fa-twitter"></i></a>
-
-            <!-- Google -->
-            <a data-mdb-ripple-init class="btn text-white btn-floating m-1" style="background-color: #dd4b39;"
-                href="{{ route('homePage') }}" role="button"><i class="fab fa-google"></i></a>
-
-            <!-- Instagram -->
-            <a data-mdb-ripple-init class="btn text-white btn-floating m-1" style="background-color: #ac2bac;"
-                href="{{ route('homePage') }}" role="button"><i class="fab fa-instagram"></i></a>
-
-            <!-- Linkedin -->
-            <a data-mdb-ripple-init class="btn text-white btn-floating m-1" style="background-color: #0082ca;"
-                href="{{ route('homePage') }}" role="button"><i class="fab fa-linkedin-in"></i></a>
-            <!-- Github -->
-            <a data-mdb-ripple-init class="btn text-white btn-floating m-1" style="background-color: #333333;"
-                href="{{ route('homePage') }}" role="button"><i class="fab fa-github"></i></a>
-        </section>
+        <div class="row justify-content-center p-0 m-0">
+            <div class="p-0 d-flex justify-content-center">
+                <!-- Facebook -->
+                <a class="icon-footer p-0 m-0" href="{{ route('homePage') }}">
+                    <img class="d-block" src="{{ asset('img/fb.png') }}" alt="">
+                </a>
+            </div>
+            <div class="p-0 d-flex justify-content-center">
+                <!-- Twitter -->
+                <a class="icon-footer p-0 m-0" href="{{ route('homePage') }}">
+                    <img class="d-block" src="{{ asset('img/x.png') }}" alt="">
+                </a>
+            </div>
+            <div class="p-0 d-flex justify-content-center">
+                <!-- Google -->
+                <a class="icon-footer p-0 m-0" href="{{ route('homePage') }}">
+                    <img class="d-block" src="{{ asset('img/google.png') }}" alt="">
+                </a>
+            </div>
+            <div class="p-0 d-flex justify-content-center">
+                <!-- Instagram -->
+                <a class="icon-footer p-0 m-0" href="{{ route('homePage') }}">
+                    <img class="d-block" src="{{ asset('img/ig.png') }}" alt="">
+                </a>
+            </div>
+            <div class="p-0 d-flex justify-content-center h-div-footer">
+                <!-- Linkedin -->
+                <a class="icon-footer p-0 m-0" href="{{ route('homePage') }}">
+                    <img class="d-block" src="{{ asset('img/linkedin.png') }}" alt="">
+                </a>
+            </div>
+            <div class="p-0 d-flex justify-content-center">
+                <!-- Github -->
+                <a class="icon-footer p-0 m-0" href="{{ route('homePage') }}">
+                    <img class="d-block" src="{{ asset('img/github.png') }}" alt="">
+                </a>
+            </div>
+        </div>
         <!-- Section: Social media -->
-    </div>
+    </section>
     <!-- Grid container -->
 
     <!-- Copyright -->

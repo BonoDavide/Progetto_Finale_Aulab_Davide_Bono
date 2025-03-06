@@ -11,16 +11,16 @@ use Illuminate\Support\Facades\DB;
 class DatabaseSeeder extends Seeder
 {
     public $categories = [
-        'elettronica',
-        'abbigliamento',
-        'salute e bellezza',
-        'casa e giardinaggio',
-        'giocattoli',
-        'sport',
-        'animali domestici',
-        'libri e riviste',
-        'accessori',
-        'motori',
+        'Smartphone',
+        'Tablet',
+        'Laptop',
+        'PC Desktop',
+        'Smartwatch',
+        'TV',
+        'Periferiche',
+        'Console Gaming',
+        'Componenti Hardware',
+        'Energia e Ricarica',
 
     ];
     /**

@@ -106,12 +106,12 @@
                     {{-- </ul> --}}
                 </ul>
             @else
-                <ul class="dropdown-menu dropdown-menu-end bg-custom-s text-white">
+                <ul class="dropdown-menu dropdown-menu-end bg-custom-s ul-over-custom text-white">
                     <li>
-                        <a class="dropdown-item" href="{{ route('login') }}">{{ __('ui.login') }}</a>
+                        <a class="dropdown-item bg-custom-s ul-over-custom" href="{{ route('login') }}">{{ __('ui.login') }}</a>
                     </li>
                     <li>
-                        <a class="dropdown-item" href="{{ route('register') }}">{{ __('ui.register') }}</a>
+                        <a class="dropdown-item bg-custom-s ul-over-custom" href="{{ route('register') }}">{{ __('ui.register') }}</a>
                     </li>
                 </ul>
             </div>

@@ -13,7 +13,6 @@
 </head>
 <body>
     <x-navbar></x-navbar>
-    <x-header></x-header>
     {{$slot}}
 
     {{-- piccolo div per lasciare spazio prima del footer --}}
@@ -22,5 +21,6 @@
     <x-footer></x-footer>
 
     <script src="https://kit.fontawesome.com/c3a1b6807b.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
 </body>
 </html>
