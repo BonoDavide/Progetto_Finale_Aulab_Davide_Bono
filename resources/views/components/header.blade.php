@@ -11,7 +11,7 @@
               </div>
               @else
               <div>
-                <p>Inizia qui il tuo Viaggio</p>
+                <p class="">Inizia qui il tuo Viaggio</p>
                 <a class="btn bottone-over-custom mx-4" href="{{ route('login') }}">{{ __('ui.login') }}</a>
                 <a class="btn bottone-over-custom mx-4" href="{{ route('register') }}">{{ __('ui.register') }}</a>
               </div>

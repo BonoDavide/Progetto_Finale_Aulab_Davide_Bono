@@ -6,7 +6,7 @@
                 <h5>{{ __('ui.become') }}</h5>
                 <p>{{ __('ui.pBecome') }}</p>
 
-                <a href="{{ route('become.revisor') }}" class="btn btn-success">{{ __('ui.revisor') }}</a>
+                <a href="{{ route('become.revisor') }}" class="btn btn-primary">{{ __('ui.revisor') }}</a>
             </div>
         </div>
     </div>
@@ -57,7 +57,7 @@
 
     <!-- Copyright -->
     <div class="text-center p-3 text-white" style="background-color: rgba(0, 0, 0, 0.05);">
-        © 2025 Copyright: 404 BrainNotFound SNC
+       <p> © 2025 Copyright: 404 BrainNotFound SNC</p>
         {{-- <a class="text-body" href="https://mdbootstrap.com/">404 BrainNotFound SNC</a> --}}
     </div>
     <!-- Copyright -->
