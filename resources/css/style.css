@@ -296,15 +296,10 @@ swiper-slide img {
     object-fit: cover;
 }
 
-.icon-footer{
-    /* position: absolute !important;
-    z-index: 1; */
-    transform: scale(0.15, 0.15);
-    /* bottom: 0%; */
-}
+
 
 .cont-footer{
-    height: 15vh;
+    min-height: 15vh;
 }
 
 .h-div-footer{

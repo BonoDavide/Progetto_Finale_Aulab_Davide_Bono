@@ -13,43 +13,43 @@
 
     <section class="container cont-footer">
         <!-- Section: Social media -->
-        <div class="row justify-content-center p-0 m-0">
-            <div class="p-0 d-flex justify-content-center">
-                <!-- Facebook -->
-                <a class="icon-footer p-0 m-0" href="{{ route('homePage') }}">
-                    <img class="d-block" src="{{ asset('img/fb.png') }}" alt="">
-                </a>
-            </div>
-            <div class="p-0 d-flex justify-content-center">
-                <!-- Twitter -->
-                <a class="icon-footer p-0 m-0" href="{{ route('homePage') }}">
-                    <img class="d-block" src="{{ asset('img/x.png') }}" alt="">
-                </a>
-            </div>
-            <div class="p-0 d-flex justify-content-center">
+        <div class="row justify-content-center">
+            {{-- <div class="p-0 d-flex justify-content-center"> --}}
+            <!-- Facebook -->
+            <a class="col-1" href="{{ route('homePage') }}">
+                <img class="img-fluid " src="{{ asset('img/fb.png') }}" alt="">
+            </a>
+            {{-- </div> --}}
+            {{-- <div class="p-0 d-flex justify-content-center"> --}}
+            <!-- Twitter -->
+            <a class="col-1 " href="{{ route('homePage') }}">
+                <img class="img-fluid" src="{{ asset('img/x.png') }}" alt="">
+            </a>
+            {{-- </div> --}}
+            {{-- <div class="p-0 d-flex justify-content-center"> --}}
                 <!-- Google -->
-                <a class="icon-footer p-0 m-0" href="{{ route('homePage') }}">
-                    <img class="d-block" src="{{ asset('img/google.png') }}" alt="">
+                <a class="col-1" href="{{ route('homePage') }}">
+                    <img class="img-fluid " src="{{ asset('img/google.png') }}" alt="">
                 </a>
-            </div>
-            <div class="p-0 d-flex justify-content-center">
+            {{-- </div> --}}
+            {{-- <div class="p-0 d-flex justify-content-center"> --}}
                 <!-- Instagram -->
-                <a class="icon-footer p-0 m-0" href="{{ route('homePage') }}">
-                    <img class="d-block" src="{{ asset('img/ig.png') }}" alt="">
+                <a class="col-1" href="{{ route('homePage') }}">
+                    <img class="img-fluid " src="{{ asset('img/ig.png') }}" alt="">
                 </a>
-            </div>
-            <div class="p-0 d-flex justify-content-center h-div-footer">
+            {{-- </div> --}}
+            {{-- <div class="p-0 d-flex justify-content-center h-div-footer"> --}}
                 <!-- Linkedin -->
-                <a class="icon-footer p-0 m-0" href="{{ route('homePage') }}">
-                    <img class="d-block" src="{{ asset('img/linkedin.png') }}" alt="">
+                <a class="col-1" href="{{ route('homePage') }}">
+                    <img class="img-fluid " src="{{ asset('img/linkedin.png') }}" alt="">
                 </a>
-            </div>
-            <div class="p-0 d-flex justify-content-center">
-                <!-- Github -->
-                <a class="icon-footer p-0 m-0" href="{{ route('homePage') }}">
-                    <img class="d-block" src="{{ asset('img/github.png') }}" alt="">
-                </a>
-            </div>
+            {{-- </div> --}}
+            {{-- <div class="p-0 d-flex justify-content-center"> --}}
+            <!-- Github -->
+            <a class="col-1" href="{{ route('homePage') }}">
+                <img class="img-fluid " src="{{ asset('img/github.png') }}" alt="">
+            </a>
+        
         </div>
         <!-- Section: Social media -->
     </section>
