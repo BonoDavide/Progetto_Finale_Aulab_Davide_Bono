@@ -7,6 +7,6 @@
         <h5 class="card-title text-white">{{ $post->price }}€</h5>
         <h5 class="card-title">{{ $post->category->name }}</h5>
         <p class="card-title text-white">{{ $post->description }}</p>
-        <a href="{{ route('post.detailPost', compact('post')) }}" class="btn btn-primary">Dettaglio prodotto</a>
+        <a href="{{ route('post.detailPost', compact('post')) }}" class="btn btn-primary">{{__('ui.detailProduct')}}</a>
     </div>
 </div>

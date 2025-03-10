@@ -2,7 +2,7 @@
     <div class="container">
         <div class="row pt-5 justify-content-center align-items-center text-center">
             <div class="col-12">
-                <h1 class="display-5 pb-5">Risultati della ricerca: <span class="fst-italic">
+                <h1 class="display-5 pb-5">{{__("ui.searchResult")}}<span class="fst-italic">
                         {{ $query }}
                     </span>
                 </h1>
@@ -16,7 +16,7 @@
 
             @empty
                 <div class="col-12">
-                    <h3 class="text-center">Nessun articolo corrisponde alla tua ricerca</h3>
+                    <h3 class="text-center">{{__("ui.msgNoArticles")}}</h3>
                 </div>
             @endforelse
         </div>

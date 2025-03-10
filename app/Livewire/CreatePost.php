@@ -19,14 +19,14 @@ class CreatePost extends Component
 {
     use WithFileUploads;
     
-    #[Validate("required", message:"inserisci titolo dell articolo")]
+    #[Validate("required", message: ("ui.insertTitle"))]
     public $title;   
-    #[Validate("required", message:"inserisci una cifra del prodotto")]
-    #[Validate("numeric", message: "Inserisci un numero valido ")]
+    #[Validate("required", message: ("ui.insertPrice"))]
+    #[Validate("numeric", message: ("ui.insertValidNumber"))]
     public $price;
-    #[Validate("required", message:"inserisci una descrizione")]
+    #[Validate("required", message: ("ui.insertDescription"))]
     public $description;
-    #[Validate("required", message:"seleziona un a categoria")]
+    #[Validate("required", message: ("ui.insertCategory"))]
     public $category;
 
     public $images = [];
@@ -62,7 +62,7 @@ class CreatePost extends Component
             File::deleteDirectory(storage_path('/app/livewire-tmp'));
         }
 
-        session()->flash('status', 'Annuncio creato con successo!');
+        session()->flash('status', __("ui.msgCreatePost"));
         
         $this->cleanForm();
     }

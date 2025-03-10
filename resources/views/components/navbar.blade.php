@@ -89,7 +89,7 @@
                         @if (Auth::user()->is_revisor)
                             <li class="pt-1">
                                 <a class="dropdown-item position-relative w-sm-25 bg-custom-s ul-over-custom"
-                                    href="{{ route('revisor.index') }}">Dashboard Revisore
+                                    href="{{ route('revisor.index') }}">{{__("ui.revisorDashboard")}}
                                     <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">{{ \App\Models\Post::toBeRevisedCount() }}</span>
                                 </a>
                             </li>

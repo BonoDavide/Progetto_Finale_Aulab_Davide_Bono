@@ -21,7 +21,7 @@
     <div class="container">
         <div class="row">
             <div class="col-12">
-                <h2 class="text-center display-1 border-bottom">CATEGORIE</h2>
+                <h2 class="text-center display-1 border-bottom">{{__("ui.category")}}</h2>
                 
                 
                 <div class="container">

@@ -103,21 +103,21 @@
                 <div class="col-12 col-md-6 d-flex flex-column justify-content-between ps-5">
                     <div>
                         <h1 class="pb-5">{{ $post_to_check->title }}</h1>
-                        <h3 class="pb-5">Autore: {{ $post_to_check->user->name }}</h3>
+                        <h3 class="pb-5">{{__("ui.author")}}: {{ $post_to_check->user->name }}</h3>
                         <h4 class="pb-5">{{ $post_to_check->price }}€</h4>
-                        <h4 class="fst-italic text-muted pb-5">Categoria: {{ $post_to_check->category->name }}</h4>
-                        <p class="h4 pb-5">{{ $post_to_check->description }}</p>
+                        <h4 class="fst-italic text-muted pb-5">{{__("ui.category")}}: {{ $post_to_check->category->name }}</h4>
+                        <p class="h4 pb-5">{{__("ui.createDesc")}}: {{ $post_to_check->description }}</p>
                     </div>
                     <div class="d-flex pb-4 justify-content-around">
                         <form action="{{ route('reject', ['post' => $post_to_check]) }}" method="POST">
                             @csrf
                             @method('PATCH')
-                            <button class="btn btn-danger py-2 px-5 fw-bold">Rifiuta</button>
+                            <button class="btn btn-danger py-2 px-5 fw-bold">{{__("ui.reject")}}</button>
                         </form>
                         <form action="{{ route('accept', ['post' => $post_to_check]) }}" method="POST">
                             @csrf
                             @method('PATCH')
-                            <button class="btn btn-success py-2 px-5 fw-bold">Accetta</button>
+                            <button class="btn btn-success py-2 px-5 fw-bold">{{__("ui.accept")}}</button>
                         </form>
                     </div>
                 </div>
@@ -125,8 +125,8 @@
         @else
             <div class="row justify-content-center align-items-center height-custom">
                 <div class="col-12 text-center">
-                    <h1 class="fst-italic display-6 text-center pb-5">Nessun articolo da revisionare</h1>
-                    <a class="mt-5 btn btn-success" href="{{ route('homePage') }}">Torna alla homepage</a>
+                    <h1 class="fst-italic display-6 text-center pb-5">{{__("ui.msgNoArticles")}}</h1>
+                    <a class="mt-5 btn btn-primary" href="{{ route('homePage') }}">{{__("ui.returnHomepage")}}</a>
                 </div>
             </div>
     @endif

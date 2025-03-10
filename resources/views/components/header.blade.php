@@ -2,16 +2,16 @@
     <div class="row">
         <div class="col-12 p-0 position-relative">
             <h1 class="title glitch-text font-face">BYTEFLUX</h1>
-            <h2 class="title2 glitch-text font-face">-Il flusso continuo dell’innovazione-</h2>
+            <h2 class="title2 glitch-text font-face">-{{ __('ui.subTitle') }}-</h2>
             <div class="bottoni-header">
               @auth
               <div>
-                <p>Vuoi pubblicare qualcosa?</p>
+                <p>{{__('ui.headerMessage1')}}</p>
                 <a class="btn bottone-over-custom" href="{{ route('post.create') }}">{{ __('ui.inserisciAnnuncio') }}</a>
               </div>
               @else
               <div>
-                <p class="">Inizia qui il tuo Viaggio</p>
+                <p>{{__('ui.headerMessage2')}}</p>
                 <a class="btn bottone-over-custom mx-4" href="{{ route('login') }}">{{ __('ui.login') }}</a>
                 <a class="btn bottone-over-custom mx-4" href="{{ route('register') }}">{{ __('ui.register') }}</a>
               </div>

@@ -2,7 +2,7 @@
     <div class="container">
         <div class="row height-custom justify-content-between pb-3 align-items-center">
             <div class="col-12 text-center my-5 pt-2 pb-5">
-                <h1 class="display-4">Pagina dettaglio di {{ $post->title }}</h1>
+                <h1 class="display-4">{{__("ui.detailTitle")}} {{ $post->title }}</h1>
             </div>
             <div class="col-12 border border-dark border-2 p-0 rounded col-md-5">
                 @if ($post->images->count() > 0)
@@ -34,11 +34,11 @@
                 @endif
             </div>
             <div class="col-12 col-md-5 text-center">
-                <h2 class="card-title pb-5">Titolo: {{ $post->title }}</h2>
+                <h2 class="card-title pb-5">{{__("ui.createTitle")}}: {{ $post->title }}</h2>
                 <div class="d-flex flex-column justify-content-center">
-                    <h4 class="card-title pb-5">Prezzo: {{ $post->price }}€</h4>
-                    <h5 class="card-title pb-5">Categoria: {{ $post->category->name }}</h5>
-                    <h5 class="card-title pb-5">Descrizione: {{ $post->description }}</h5>
+                    <h4 class="card-title pb-5">{{__("ui.createPrice")}}: {{ $post->price }}€</h4>
+                    <h5 class="card-title pb-5">{{__("ui.category")}}: {{ $post->category->name }}</h5>
+                    <h5 class="card-title pb-5">{{__("ui.createDesc")}}: {{ $post->description }}</h5>
 
                 </div>
             </div>
