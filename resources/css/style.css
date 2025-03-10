@@ -304,14 +304,14 @@ body {
 }
 
 .btn-primary {
-    background-color: var(--coloreTerziario);
-    border-color: var(--coloreSecondario);
+    background-color: var(--coloreTerziario) !important;
+    border-color: var(--coloreSecondario) !important;
     transition: background-color 0.3s ease-in-out, border-color 0.3s ease-in-out;
 }
 
 .btn-primary:hover {
-    background-color: var(--coloreSecondario);
-    border-color: var(--coloreTerziario);
+    background-color: var(--coloreSecondario) !important;
+    border-color: var(--coloreTerziario) !important;
 }
 
 /* .tronca {
@@ -327,6 +327,9 @@ body {
     overflow: hidden;
     text-overflow: ellipsis; 
 }
+
+/* bottone glitch */
+/* .btn-effect { */
 
 /* card prova */
 .cardProva {

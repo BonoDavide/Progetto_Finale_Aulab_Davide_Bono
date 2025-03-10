@@ -28,7 +28,7 @@
                             <div class="row g-0">
                                 <div class="col-12 mb-4 text-center ">
                                     <img src="{{ $image->getUrl(900, 900) }}"
-                                    class="img-fluid rounded shadow  min-w-100"
+                                    class="card-img-top cardhome"
                                     alt="Immagine {{ $key + 1 }} dell'articolo '{{ $post_to_check->title }}'">
                                 </div>
                                 <div class="col-mb-5 ps-3">
