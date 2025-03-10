@@ -69,7 +69,7 @@
                                     <div class="img-preview mx-auto shadow rounded border border-1 border-dark"
                                         style="background-image: url({{ $image->temporaryUrl() }});">
                                     </div>
-                                    <button type="button" class="btn mt-1 btn-danger"
+                                    <button type="button" class="btn mt-1 btn-primary"
                                         wire:click="removeImage({{ $key }})">X</button>
                                 </div>
                             @endforeach

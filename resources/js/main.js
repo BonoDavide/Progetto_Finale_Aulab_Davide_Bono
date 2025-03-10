@@ -11,3 +11,5 @@ window.addEventListener("scroll", () => {
         navbar.classList.remove("nav-scrolled");
     }
 });
+
+// troncate

@@ -50,12 +50,13 @@
             <div class="dropdown ms-3">
                 <button class="btn dropdown-toggle ul-over-custom" type="button" data-bs-toggle="dropdown"
                     aria-expanded="false">
-                    <i class="fa-duotone fa-solid fa-flag"></i>
+                    <img src="{{ asset('vendor/blade-flags/language-' . app()->getLocale() . '.svg') }}" width="22" height="22" />
+                    {{-- <i class="fa-duotone fa-solid fa-flag"></i> --}}
                 </button>
-                <ul class="dropdown-menu dropdown-menu-end bg-custom-s text-white">
-                    <li><button class="dropdown-item" type="button"><x-_locale lang="it" />IT</button></li>
-                    <li><button class="dropdown-item" type="button"><x-_locale lang="en" />EN</button></li>
-                    <li><button class="dropdown-item" type="button"><x-_locale lang="es" />ES</button></li>
+                <ul class="dropdown-menu dropdown-menu-end bg-custom-s text-white wnav">
+                    <li class=" bg-custom-s ul-over-custom "><button class="dropdown-item p-0 " type="button"><x-_locale lang="it" />IT</button></li>
+                    <li class=" bg-custom-s ul-over-custom"><button class="dropdown-item p-0" type="button"><x-_locale lang="en" />EN</button></li>
+                    <li class=" bg-custom-s ul-over-custom"><button class="dropdown-item p-0" type="button"><x-_locale lang="es" />ES</button></li>
                 </ul>
             </div>
 

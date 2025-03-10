@@ -2,7 +2,7 @@
     <div class="container pt-5">
         <div class="row">
             <div class="col-12 pt-5">
-                <h1 class="diplay-1 text-center text-dark">{{__("ui.loginTitle")}}</h1>
+                <h1 class="diplay-1 text-center text-white">{{__("ui.loginTitle")}}</h1>
                 <x-error></x-error>
             </div>
         </div>

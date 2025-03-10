@@ -10,22 +10,28 @@
 
 
 
-h1 {
+/* h1 {
     font-family: 'Poppins', sans-serif;
     /* text-decoration: underline; */
     /* text-decoration-thickness: 2px; */
     /* text-underline-offset: 2px; */
-}
+/* } */ 
 
-h2,h3,h4,h5,h6 {
-font-family: "Tektur", sans-serif;}
+
+h1,h2,h3,h4,h5,h6,label,select,input,p {
+font-family: "Tektur", sans-serif ;}
 
 a {
     font-family: "Tektur", sans-serif !important;
     color: white !important;
 }
-p {
-    font-family: "Tektur", sans-serif;}
+/* p {
+    font-family: "Tektur", sans-serif;} */
+
+    .er-font{
+        font-family: "Tektur", sans-serif !important;}
+
+    
 
 .borderForm {
     border-radius: 1vh !important;
@@ -80,7 +86,7 @@ p {
 
 :root {
     --colorePrimario: rgb(149, 143, 150);
-    --coloreSecondario: rgb(43, 43, 43);
+    --coloreSecondario: rgb(20, 20, 20);
     --coloreTerziario: rgb(212, 0, 255);
     --coloreQuaternario: rgb(139, 132, 144);
     --coloreOmbra: rgba(212, 0, 255, 0.4);
@@ -117,6 +123,9 @@ body {
     transition: 1.5s !important;
 }
 
+.wnav{
+    min-width: 12vh !important;
+}
 
 .nav-scrolled {
     margin: 5vh 5vw;
@@ -271,7 +280,12 @@ body {
 .card-img-top {
     border-bottom: 2px solid var(--coloreTerziario);
 }
-
+.cardhome{
+    /* /* height: 300px; */
+    /* width: 300px; */ 
+    object-fit: cover; 
+    aspect-ratio: 1;   
+}
 
 .btn-primary {
     background-color: var(--coloreTerziario);
@@ -282,6 +296,20 @@ body {
 .btn-primary:hover {
     background-color: var(--coloreSecondario);
     border-color: var(--coloreTerziario);
+}
+
+/* .tronca {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2; 
+    overflow: hidden;
+} */
+
+
+.tronca {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis; /* Aggiunge i puntini di sospensione */
 }
 
 /* card prova */
