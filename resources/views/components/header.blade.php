@@ -5,15 +5,19 @@
             <h2 class="title2 glitch-text ">-{{ __('ui.subTitle') }}-</h2>
             <div class="bottoni-header">
               @auth
-              <div>
+              <div class="d-flex justify-content-center flex-column">
                 <p>{{__('ui.headerMessage1')}}</p>
-                <a class="btn bottone-over-custom" href="{{ route('post.create') }}">{{ __('ui.inserisciAnnuncio') }}</a>
+                <a class="btn btnglitch" href="{{ route('post.create') }}">{{ __('ui.inserisciAnnuncio') }}</a>
               </div>
               @else
-              <div>
-                <p>{{__('ui.headerMessage2')}}</p>
-                <a class="btn bottone-over-custom mx-4" href="{{ route('login') }}">{{ __('ui.login') }}</a>
-                <a class="btn bottone-over-custom mx-4" href="{{ route('register') }}">{{ __('ui.register') }}</a>
+              <div class="container">
+                <div class="row">
+                  <p>{{__('ui.headerMessage2')}}</p>
+                </div>
+                <div class="row">
+                  <a class="btn btnglitch1  mx-4" href="{{ route('login') }}">{{ __('ui.login') }}</a>
+                  <a class="btn btnglitch1  mx-4" href="{{ route('register') }}">{{ __('ui.register') }}</a>
+                </div>
               </div>
               @endauth
             </div>

@@ -52,7 +52,7 @@ class PostController extends Controller implements HasMiddleware
     public function byCategory(Category $category) {
         
         $post=$category->posts->where('is_accepted',true);
-        return view("post.byCategory", ["posts"=> $category->posts, "category"=>$category]);
+        return view("post.byCategory", ["posts"=> $post, "category"=>$category]);
     }
     
     /**

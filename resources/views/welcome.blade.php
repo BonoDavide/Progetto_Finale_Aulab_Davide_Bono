@@ -31,38 +31,43 @@
                             space-between="30" centered-slides="true">
                             <swiper-slide class="  position-relative imgcustom2">
                                 <img class="" src="{{ asset('img/categoria_telefoni2.jpg') }}" alt="">
-                                <h4 class="position-absolute cat-slide start-50 translate-middle  text-white bg-dark z-3">Telefoni</h4>
-                                
+                                <h2 class="position-absolute cat-slide start-50 translate-middle w-100 letter-spacing  text-white bg-dark z-3"> - SMARTPHONE - </h2>
                             </swiper-slide>
-                            
                             <swiper-slide class="position-relative imgcustom2 ">
                                 <img class="" src="{{ asset('img/categoria_tablet.jpg') }}" alt="">
+                                <h2 class="position-absolute cat-slide start-50 translate-middle w-100 letter-spacing  text-white bg-dark z-3"> - TABLET - </h2>
                             </swiper-slide>
-                            
-                            
                             <swiper-slide class="position-relative imgcustom2">
                                 <img class="" src="{{ asset('img/categoria_laptop.jpg') }}" alt="">
+                                <h2 class="position-absolute cat-slide start-50 translate-middle w-100 letter-spacing  text-white bg-dark z-3"> - LAPTOP - </h2>
                             </swiper-slide>
                             <swiper-slide class="position-relative imgcustom2">
                                 <img class="" src="{{ asset('img/categoria_PC_fisso.jpg') }}" alt="">
+                                <h2 class="position-absolute cat-slide start-50 translate-middle w-100 letter-spacing  text-white bg-dark z-3"> - PC DESKTOP - </h2>
                             </swiper-slide>
                             <swiper-slide class="imgcustom2 position-relative">
                                 <img class="" src="{{ asset('img/categoria_smartwatch.jpg') }}" alt="">
+                                <h2 class="position-absolute cat-slide start-50 translate-middle w-100 letter-spacing  text-white bg-dark z-3"> - SMARTWATCH - </h2>
                             </swiper-slide>
                             <swiper-slide class="imgcustom2 position-relative">
                                 <img class="" src="{{ asset('img/categoria_console.jpg') }}" alt="">
+                                <h2 class="position-absolute cat-slide start-50 translate-middle w-100 letter-spacing  text-white bg-dark z-3"> - CONSOLE - </h2>
                             </swiper-slide>
                             <swiper-slide class="imgcustom2 position-relative">
-                                <img class="" src="{{ asset('img/categoria_tablet.jpg') }}" alt="">
+                                <img class="" src="{{ asset('img/TV.png') }}" alt="">
+                                <h2 class="position-absolute cat-slide start-50 translate-middle w-100 letter-spacing  text-white bg-dark z-3"> - SMART TV - </h2>
                             </swiper-slide>
                             <swiper-slide class="imgcustom2 position-relative">
                                 <img class="" src="{{ asset('img/periferiche.png') }}" alt="">
+                                <h2 class="position-absolute cat-slide start-50 translate-middle w-100 letter-spacing  text-white bg-dark z-3"> - PERIFERICHE - </h2>
                             </swiper-slide>
                             <swiper-slide class="imgcustom2 position-relative">
                                 <img class="" src="{{ asset('img/haardware.png') }}" alt="">
+                                <h2 class="position-absolute cat-slide start-50 translate-middle w-100 letter-spacing  text-white bg-dark z-3"> - HARDWARE - </h2>
                             </swiper-slide>
                             <swiper-slide class="imgcustom2 position-relative">
                                 <img class="" src="{{ asset('img/categoria_energia.png') }}" alt="">
+                                <h2 class="position-absolute cat-slide start-50 translate-middle w-100 letter-spacing  text-white bg-dark z-3"> - ENERGIA - </h2>
                             </swiper-slide>
                         </swiper-container>
                     </div>
