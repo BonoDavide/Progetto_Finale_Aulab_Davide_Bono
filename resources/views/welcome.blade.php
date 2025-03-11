@@ -16,7 +16,7 @@
             </div>
         </div>
     </div>
-    
+    {{-- <livewire:chatbot> --}}
     {{-- CATEGORIE --}}
     <div class="container">
         <div class="row">
@@ -26,8 +26,8 @@
                 <div class="container">
                     <div class="row py-5">
                         <div class="col-12">
-                            <swiper-container class="mySwiper" slides-per-view=""
-                            space-between="30" centered-slides="true">
+                            <swiper-container class="mySwiper" slides-per-view="3"
+                            space-between="30" centered-slides="true" loop="false">
                             @foreach ($categories as $category) 
                             
                             <swiper-slide class="  position-relative imgcustom2">
