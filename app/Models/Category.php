@@ -9,7 +9,7 @@ use Illuminate\Database\Eloquent\Relations\BelongsTo;
 
 class Category extends Model
 {
-    protected $fillable = ['name'];
+    protected $fillable = ['name','img_path'];
 
     public function posts():HasMany{
         return $this->hasMany(Post::class);
