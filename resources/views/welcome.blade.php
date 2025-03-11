@@ -36,7 +36,7 @@
                                 
                                 <a href="{{ route('byCategory', ['category' => $category]) }}">
                                     <img class="" src="{{ $category->img_path }}" alt=""> </a>
-                                    <h2 class="position-absolute cat-slide start-50 translate-middle w-100 letter-spacing  text-white bg-dark z-3"> - {{ $category->name }} - </h2>
+                                    <h2 class="position-absolute cat-slide start-50 translate-middle w-100 letter-spacing text-white bg-dark z-3"> - {{ $category->name }} - </h2>
                                     
                                     
                                 </swiper-slide>

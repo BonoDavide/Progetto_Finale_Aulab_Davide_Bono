@@ -215,7 +215,8 @@ body {
 /* spaziatura lettere */
 
 .letter-spacing {
-    letter-spacing: 6px;
+    letter-spacing: 2px;
+    font-size: 27px;
 }
 /* fonts */
 @font-face {
