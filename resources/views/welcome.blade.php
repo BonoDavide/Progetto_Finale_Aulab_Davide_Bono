@@ -16,83 +16,59 @@
             </div>
         </div>
     </div>
-    
+    {{-- <livewire:chatbot> --}}
     {{-- CATEGORIE --}}
     <div class="container">
         <div class="row">
             <div class="col-12">
                 <h2 class="text-center display-1 border-bottom">{{__("ui.category")}}</h2>
                 
-                
                 <div class="container">
                     <div class="row py-5">
                         <div class="col-12">
-                            <swiper-container class="mySwiper" slides-per-view=""
-                            space-between="30" centered-slides="true">
+                            <swiper-container class="mySwiper" slides-per-view="3"
+                            space-between="30" centered-slides="true" loop="false">
+                            @foreach ($categories as $category) 
+                            
                             <swiper-slide class="  position-relative imgcustom2">
-                                <img class="" src="{{ asset('img/categoria_telefoni2.jpg') }}" alt="">
-                                <h2 class="position-absolute cat-slide start-50 translate-middle w-100 letter-spacing  text-white bg-dark z-3"> - SMARTPHONE - </h2>
-                            </swiper-slide>
-                            <swiper-slide class="position-relative imgcustom2 ">
-                                <img class="" src="{{ asset('img/categoria_tablet.jpg') }}" alt="">
-                                <h2 class="position-absolute cat-slide start-50 translate-middle w-100 letter-spacing  text-white bg-dark z-3"> - TABLET - </h2>
-                            </swiper-slide>
-                            <swiper-slide class="position-relative imgcustom2">
-                                <img class="" src="{{ asset('img/categoria_laptop.jpg') }}" alt="">
-                                <h2 class="position-absolute cat-slide start-50 translate-middle w-100 letter-spacing  text-white bg-dark z-3"> - LAPTOP - </h2>
-                            </swiper-slide>
-                            <swiper-slide class="position-relative imgcustom2">
-                                <img class="" src="{{ asset('img/categoria_PC_fisso.jpg') }}" alt="">
-                                <h2 class="position-absolute cat-slide start-50 translate-middle w-100 letter-spacing  text-white bg-dark z-3"> - PC DESKTOP - </h2>
-                            </swiper-slide>
-                            <swiper-slide class="imgcustom2 position-relative">
-                                <img class="" src="{{ asset('img/categoria_smartwatch.jpg') }}" alt="">
-                                <h2 class="position-absolute cat-slide start-50 translate-middle w-100 letter-spacing  text-white bg-dark z-3"> - SMARTWATCH - </h2>
-                            </swiper-slide>
-                            <swiper-slide class="imgcustom2 position-relative">
-                                <img class="" src="{{ asset('img/categoria_console.jpg') }}" alt="">
-                                <h2 class="position-absolute cat-slide start-50 translate-middle w-100 letter-spacing  text-white bg-dark z-3"> - CONSOLE - </h2>
-                            </swiper-slide>
-                            <swiper-slide class="imgcustom2 position-relative">
-                                <img class="" src="{{ asset('img/TV.png') }}" alt="">
-                                <h2 class="position-absolute cat-slide start-50 translate-middle w-100 letter-spacing  text-white bg-dark z-3"> - SMART TV - </h2>
-                            </swiper-slide>
-                            <swiper-slide class="imgcustom2 position-relative">
-                                <img class="" src="{{ asset('img/periferiche.png') }}" alt="">
-                                <h2 class="position-absolute cat-slide start-50 translate-middle w-100 letter-spacing  text-white bg-dark z-3"> - PERIFERICHE - </h2>
-                            </swiper-slide>
-                            <swiper-slide class="imgcustom2 position-relative">
-                                <img class="" src="{{ asset('img/haardware.png') }}" alt="">
-                                <h2 class="position-absolute cat-slide start-50 translate-middle w-100 letter-spacing  text-white bg-dark z-3"> - HARDWARE - </h2>
-                            </swiper-slide>
-                            <swiper-slide class="imgcustom2 position-relative">
-                                <img class="" src="{{ asset('img/categoria_energia.png') }}" alt="">
-                                <h2 class="position-absolute cat-slide start-50 translate-middle w-100 letter-spacing  text-white bg-dark z-3"> - ENERGIA - </h2>
-                            </swiper-slide>
-                        </swiper-container>
+                                
+                                
+                                
+                                <a href="{{ route('byCategory', ['category' => $category]) }}">
+                                    <img class="" src="{{ $category->img_path }}" alt=""> </a>
+                                    <h2 class="position-absolute cat-slide start-50 translate-middle w-100 letter-spacing text-white bg-dark z-3"> - {{ $category->name }} - </h2>
+                                    
+                                    
+                                </swiper-slide>
+                                
+                                @endforeach
+                                
+                                
+                            </swiper-container>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        {{-- ULTIMI ANNUNCI --}}
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h2 class="text-center display-1 border-bottom">{{ __('ui.latestPosts') }}:</h2>
+                    
+                    
+                    
+                    <div class="row justify-content-evenly pt-3">
+                        @foreach ($posts as $post)
+                        <div class="col-4 my-4 d-flex justify-content-center">
+                            <x-card :post="$post"></x-card>
+                        </div>
+                        @endforeach
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    
-    {{-- ULTIMI ANNUNCI --}}
-    <div class="container">
-        <div class="row">
-            <div class="col-12">
-                <h2 class="text-center display-1 border-bottom">{{ __('ui.latestPosts') }}:</h2>
-                
-                
-                
-                <div class="row justify-content-evenly pt-3">
-                    @foreach ($posts as $post)
-                    <div class="col-4 my-4 d-flex justify-content-center">
-                        <x-card :post="$post"></x-card>
-                    </div>
-                    @endforeach
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
 </x-layout>

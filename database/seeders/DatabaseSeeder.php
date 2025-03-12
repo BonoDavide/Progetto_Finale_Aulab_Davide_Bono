@@ -11,24 +11,25 @@ use Illuminate\Support\Facades\DB;
 class DatabaseSeeder extends Seeder
 {
     public $categories = [
-        ['Smartphone', 'images/categories/smartphone.jpg'],
-        ['Tablet', 'images/categories/tablet.jpg'],
-        ['Laptop', 'images/categories/laptop.jpg'],
-        ['PC Desktop', 'images/categories/pc-desktop.jpg'],
-        ['Smartwatch', 'images/categories/smartwatch.jpg'],
-        ['TV', 'images/categories/tv.jpg'],
-        ['Periferiche', 'images/categories/periferiche.jpg'],
-        ['Console Gaming', 'images/categories/console-gaming.jpg'],
-        ['Componenti Hardware', 'images/categories/componenti-hardware.jpg'],
-        ['Energia e Ricarica', 'images/categories/energia-ricarica.jpg'],
+        ['name'=>'Smartphone','img_path'=>'/img/categoria_telefoni2.jpg'],
+        ['name'=>'Tablet','img_path'=>'/img/categoria_tablet.jpg'],
+        ['name'=>'Laptop','img_path'=>'/img/categoria_laptop.jpg'],
+        ['name'=>'PC Desktop','img_path'=>'/img/categoria_PC_fisso.jpg'],
+        ['name'=>'Smartwatch','img_path'=>'/img/categoria_smartwatch.jpg'],
+        ['name'=>'TV','img_path'=>'/img/TV.png'],
+        ['name'=>'Periferiche','img_path'=>'/img/periferiche.png'],
+        ['name'=>'Console Gaming','img_path'=>'/img/categoria_console.jpg'],
+        ['name'=>'Componenti Hardware','img_path'=>'/img/hardware.png'],
+        ['name'=>'Energia e Ricarica','img_path'=>'/img/categoria_energia.png'],
+
     ];
 
     public function run(): void {
 
         foreach ($this->categories as $category) {
             Category::create([
-                'name' => $category[0],
-                "img_path" =>$category[1]
+                'name' => $category['name'],
+                'img_path' => $category['img_path'],
             ]);
         }
     }

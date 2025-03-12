@@ -208,6 +208,14 @@ body {
     );
 }
 
+.imgcustom3{
+    /* width: 400px !important; */
+    height: 500px !important;
+   left: 50% !important;
+   right: 50% !important;
+   
+}
+
 /* categorie */
 .cat-slide {
     top: 91%;
@@ -215,7 +223,8 @@ body {
 /* spaziatura lettere */
 
 .letter-spacing {
-    letter-spacing: 6px;
+    letter-spacing: 2px;
+    font-size: 27px;
 }
 /* fonts */
 @font-face {

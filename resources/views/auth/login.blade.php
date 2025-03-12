@@ -9,7 +9,7 @@
     </div>
     <div class="container pt-4 pb-5">
         <div class="row justify-content-center">
-            <div class="col-12 col-md-4 border rounded-2 borderForm border-dark border-2 p-4">
+            <div class="col-12 col-md-4 border rounded-2 borderForm border-white border-2 p-4">
                 <form action="{{ route('login') }}" method="POST">
                     @csrf
                     <div class="mb-3">

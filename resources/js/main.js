@@ -12,4 +12,21 @@ window.addEventListener("scroll", () => {
     }
 });
 
-// troncate
+// // swiper
+// document.addEventListener("DOMContentLoaded", function() {
+//     const swiperEl = document.querySelector('.mySwiper');
+//     // Assicurati che l'istanza di Swiper sia già inizializzata
+//     const swiper = swiperEl.swiper;
+  
+//     // Disabilita lo scorrimento verso destra quando si raggiunge l'ultima slide
+//     swiper.on('reachEnd', function() {
+//       swiper.allowSlideNext = false;
+//     });
+  
+//     // Riabilita lo scorrimento se l'utente torna indietro dalla fine
+//     swiper.on('fromEdge', function() {
+//       if (!swiper.isEnd) {
+//         swiper.allowSlideNext = true;
+//       }
+//     });
+//   });
