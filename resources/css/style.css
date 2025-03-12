@@ -282,7 +282,7 @@ body {
 }
 
 .bordo {
-    border: 2px solid var(--coloreTerziario);
+    border: 2px solid var(--coloreTerziario) !important;
     border-radius: 10px;
 }
 
