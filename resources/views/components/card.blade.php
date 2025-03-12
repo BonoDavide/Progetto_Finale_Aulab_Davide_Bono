@@ -4,10 +4,10 @@
             <div id="carouselExample{{$post->id}}" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner">
                     @foreach ($post->images as $image)
-                        <div class="carousel-item {{ $loop->first ? 'active' : '' }}">
-                            <img class="card-img-top w-100 p-1 imgcustom3 cardhome" src="{{ $image->getUrl(300, 300) }}"
-                                alt="Immagine dell'articolo {{ $post->title }}">
-                        </div>
+                    <div class="carousel-item {{ $loop->first ? 'active' : '' }}">
+                        <img class="card-img-top w-100 p-1 imgcustom3 cardhome" src="{{ $image->getUrl(300, 300) }}"
+                        alt="Immagine dell'articolo {{ $post->title }}">
+                    </div>
                     @endforeach
                 </div>
                 <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample{{$post->id}}"
@@ -23,32 +23,33 @@
             </div>
         </div>
     </div>
-
+    
     <div class="row">
         <div class="card-body">
             <h2 class="h5 tronca card-title text-white">{{ $post->title }}</h2>
             <h5 class="card-title text-white">{{ $post->price }}€</h5>
             <h5 class="tronca card-title">{{ $post->category->name }}</h5>
             <p class="tronca card-title text-white">{{ $post->description }}</p>
-
+            
         </div>
     </div>
     <div class="row ">
-
+        
         <div class="pb-2  d-flex justify-content-center position-relative">
             <a href="{{ route('post.detailPost', compact('post')) }}"
-                class="btn btn-primary">{{ __('ui.detailProduct') }}</a>
-        </div>
-       @auth
+            class="btn btn-primary mx-2">{{ __('ui.detailProduct') }}</a>
+            @auth
             <livewire:wishlist :post_id="$post->id"/>
-       @endauth
+            @endauth
             
+        </div>
         
         
-
+        
+        
     </div>
-
-
-
-
+    
+    
+    
+    
 </div>

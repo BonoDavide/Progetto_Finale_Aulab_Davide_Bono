@@ -1,8 +1,8 @@
 <div>
     <button 
         wire:click='addToWishList' 
-        class="btn 
-            @if($isFavorited) bg-danger @else bg-white @endif"
+        class="btn btn-reject
+            @if($isFavorited) bg-danger @else bg-white text-black @endif"
     >
         @if($isFavorited)
             Togli dai preferiti
