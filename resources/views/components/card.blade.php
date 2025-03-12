@@ -39,6 +39,14 @@
             <a href="{{ route('post.detailPost', compact('post')) }}"
                 class="btn btn-primary">{{ __('ui.detailProduct') }}</a>
         </div>
+       @auth
+           {{-- <livewire:wishlist :user_id="Auth::user()->id" :post_id="$post->id" /> --}}
+            <livewire:wishlist :post_id="$post->id"/>
+       @endauth
+            
+        
+        
+
     </div>
 
 

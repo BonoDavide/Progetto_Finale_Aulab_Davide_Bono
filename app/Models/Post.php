@@ -7,6 +7,7 @@ use Laravel\Scout\Searchable;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\HasMany;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
+use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 
 class Post extends Model
 {
@@ -45,5 +46,9 @@ class Post extends Model
     }public function images() : HasMany
     {
         return $this->hasMany(Image::class);
+    }
+
+    public function wishUsers(): BelongsToMany {
+        return $this->belongsToMany(User::class);
     }
 }

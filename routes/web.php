@@ -28,3 +28,5 @@ Route::get('/search/Post', [PublicController::class, 'searchPost'])->name('post.
 
 //Rotta language
 Route::post('/lingua/{lang}', [PublicController::class, 'setLanguage'])->name('setLocale');
+
+Route::get('/wishlist', [PublicController::class, 'showWishlist'])->name('wishlist');
