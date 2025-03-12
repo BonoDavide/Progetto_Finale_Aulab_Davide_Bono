@@ -1,7 +1,7 @@
 <nav class="navbar navCustom navbar-expand-md transition">
     <div class="container-fluid">
         <a class="navbar-brand ps-2 pe-2" href="{{ route('homePage') }}">
-            <img class="logo" src="{{ asset('/img/404.png') }}" alt="logo 404">
+            <img class="logo" src="{{ asset('/img/mimmo.png') }}" alt="logo 404">
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">

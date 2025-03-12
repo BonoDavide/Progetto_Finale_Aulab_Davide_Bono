@@ -3,7 +3,7 @@
         <div class="row justify-content-center">
             <div class="col-12 col-md-8">
                 @if (session('status'))
-                    <div class="card bg-light alert text-success text-uppercase text-center">
+                    <div class="card bg-light alert text-black text-uppercase text-center bordo">
                         {{ session('status') }}
                     </div>
                 @endif

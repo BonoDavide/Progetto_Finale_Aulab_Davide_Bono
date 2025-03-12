@@ -5,7 +5,7 @@
                 <div class="carousel-inner">
                     @foreach ($post->images as $image)
                         <div class="carousel-item {{ $loop->first ? 'active' : '' }}">
-                            <img class="card-img-top cardhome" src="{{ $image->getUrl(300, 300) }}"
+                            <img class="card-img-top w-100 p-1 imgcustom3 cardhome" src="{{ $image->getUrl(300, 300) }}"
                                 alt="Immagine dell'articolo {{ $post->title }}">
                         </div>
                     @endforeach
