@@ -53,7 +53,7 @@ class CreatePost extends Component
                 // dispatch(new GoogleVisionSafeSearch($newImage->id));
                 // dispatch(new GoogleVisionLabelImage($newImage->id));
                 RemoveFaces::withChain([
-                    new ResizeImage($newImage->path, 900, 900),
+                    new ResizeImage($newImage->path, 300, 300),
                     new GoogleVisionSafeSearch($newImage->id),
                     new GoogleVisionLabelImage($newImage->id)
                 ])->dispatch($newImage->id);

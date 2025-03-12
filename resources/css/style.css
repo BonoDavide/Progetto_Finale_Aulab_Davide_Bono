@@ -208,6 +208,14 @@ body {
     );
 }
 
+.imgcustom3{
+    /* width: 400px !important; */
+    height: 500px !important;
+   left: 50% !important;
+   right: 50% !important;
+   
+}
+
 /* categorie */
 .cat-slide {
     top: 91%;
