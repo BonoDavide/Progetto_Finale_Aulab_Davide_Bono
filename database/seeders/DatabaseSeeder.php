@@ -23,9 +23,7 @@ class DatabaseSeeder extends Seeder
         ['name'=>'Energia e Ricarica','img_path'=>'/img/categoria_energia.png'],
 
     ];
-    /**
-     * Seed the application's database.
-     */
+
     public function run(): void {
 
         foreach ($this->categories as $category) {
