@@ -99,7 +99,7 @@
                             <a class="dropdown-item bg-custom-s ul-over-custom" href="{{ route('post.create') }}">{{ __('ui.inserisciAnnuncio') }}</a>
                         </li>
                         <li>
-                            <a class="dropdown-item bg-custom-s ul-over-custom" href="{{ route('wishlist') }}">wishlist</a>
+                            <a class="dropdown-item bg-custom-s ul-over-custom" href="{{ route('wishlist') }}">Wishlist</a>
                         </li>
                         <li>
                             <form action="{{ route('logout') }}" method="POST">

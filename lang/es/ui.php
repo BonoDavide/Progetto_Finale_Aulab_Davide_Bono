@@ -53,4 +53,7 @@ return [
     'acceptArticle' => "Has aceptado el artículo",
     'rejectArticle' => "Has rechazado el artículo",
     'requestRevisor' => 'Has solicitado ser revisor',
+    'wishlist' => 'Aquí está tu lista de deseos',
+    'wishlistTitle' => 'Aún no has añadido nada a tu lista de deseos',
+    'btnHome' => 'Volver a la Home',
 ];

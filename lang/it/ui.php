@@ -54,5 +54,7 @@ return
     'acceptArticle' => "Hai accettato l'articolo",
     'rejectArticle' => "Hai rifiutato l'articolo",
     'requestRevisor' => 'Hai richiesto di diventare revisore',
-    
+    'wishlist' => 'Ecco la tua Wishlist',
+    'wishlistTitle' => 'Non hai ancora aggiunto nulla alla tua Wishlist',
+    'btnHome' => 'Torna alla Home',
 ];

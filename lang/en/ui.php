@@ -9,7 +9,7 @@ return [
     'profile' => 'Profile',
     'language' => 'Language',
     'annunci'=> 'Announcement catalog',
-    'inserisciAnnuncio'=> 'Insert Announcement',
+    'inserisciAnnuncio'=> 'Insert Post',
     'search' => 'Search',
     'allCategories' => 'All the categories',
     'become' => 'Do you want to become a reviewer?',
@@ -53,5 +53,7 @@ return [
     'acceptArticle' => "You have accepted the article",
     'rejectArticle' => "You have rejected the article",
     'requestRevisor' => 'You have requested to become a revisor',
-
+    'wishlist' => 'Here is your Wishlist',
+    'wishlistTitle' => 'You have not added anything to your Wishlist yet',
+    'btnHome' => 'Back to Home',
 ];
