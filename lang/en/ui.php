@@ -34,7 +34,7 @@ return [
     'subTitle'=> 'The continuous flow of innovation',
     'headerMessage1' => 'Do you want to publish something?',
     'headerMessage2' => 'Start your journey',
-    'category' => 'Category',
+    'category' => 'Categories',
     'detailProduct' => 'Product detail',
     'uploadImages' => 'Upload images',
     'detailTitle' => 'Detail page of',

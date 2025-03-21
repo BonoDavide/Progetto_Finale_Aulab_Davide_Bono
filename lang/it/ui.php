@@ -35,7 +35,7 @@ return
     'subTitle' => 'Il flusso continuo dell’innovazione',
     'headerMessage1' => 'Vuoi pubblicare qualcosa?',
     'headerMessage2' => 'Inizia il tuo viaggio',
-    'category' => 'Categoria',
+    'category' => 'Categorie',
     'detailProduct' => 'Dettaglio Prodotto',
     'uploadImages' => 'Carica immagini',
     'detailTitle' => 'Pagina dettaglio di',

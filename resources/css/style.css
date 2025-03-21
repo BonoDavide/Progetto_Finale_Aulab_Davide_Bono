@@ -255,7 +255,7 @@ body {
     font-family: "MioFont", sans-serif;
 
   
-    color: whitesmoke;
+    color: white;
     position: absolute;
     top: 53%;
     left: 50%;
@@ -264,8 +264,8 @@ body {
     font-size: calc(3px + 3vw);
    
     text-align: center;
-    text-shadow: 4px 4px 4px var(--coloreTerziario),
-        4px 4px 4px var(--coloreTerziario);
+    text-shadow: 1px 1px 1px var(--coloreTerziario),
+        1px 1px 1px var(--coloreTerziario);
     
 }
 
@@ -296,6 +296,7 @@ body {
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(139, 132, 144, 0.5) !important;
     transition: box-shadow 0.3s ease-in-out;
+    transform: scale(80%);
 }
 
 .card-img-top {

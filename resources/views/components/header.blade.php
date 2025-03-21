@@ -2,7 +2,7 @@
     <div class="row">
         <div class="col-12 p-0 position-relative">
             <h1 class="title glitch-text ">BYTEFLUX</h1>
-            <h2 class="title2 glitch-text ">-{{ __('ui.subTitle') }}-</h2>
+            <h2 class="title2">-{{ __('ui.subTitle') }}-</h2>
             <div class="bottoni-header">
               @auth
               <div class="d-flex justify-content-center flex-column">

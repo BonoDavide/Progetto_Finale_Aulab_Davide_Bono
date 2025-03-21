@@ -134,18 +134,17 @@
                     </h6>
                 </div>
                 <div class="d-flex pb-4">
-                    <form action="{{ route('reject', ['post' => $post_to_check]) }}" method="POST">
-                        @csrf
-                        @method('PATCH')
-                        <button class="btn btnreject er-font py-2 px-5 fw-bold">{{ __('ui.reject') }}</button>
-                    </form>
                     <form action="{{ route('accept', ['post' => $post_to_check]) }}" method="POST">
                         @csrf
                         @method('PATCH')
                         <button
-                        class="btn btnreject er-font py-2 px-5 ms-5 fw-bold">{{ __('ui.accept') }}</button>
+                        class="btn btn-succes er-font py-2 px-5 fw-bold">{{ __('ui.accept') }}</button>
                     </form>
-                    
+                    <form action="{{ route('reject', ['post' => $post_to_check]) }}" method="POST">
+                        @csrf
+                        @method('PATCH')
+                        <button class="btn btn-danger er-font py-2 px-5 ms-5 fw-bold">{{ __('ui.reject') }}</button>
+                    </form>
                 </div>
                 <div class="pb-5 mb-5">
                 </div>

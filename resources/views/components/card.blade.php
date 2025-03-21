@@ -1,5 +1,5 @@
-<div class="container card min-w-100">
-    <div class="row min-w-100 ">
+<div class="container card">
+    <div class="row">
         <div class=" border-3 p-0 justify-content-center d-flex min-w-100">
             <div id="carouselExample{{$post->id}}" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner">

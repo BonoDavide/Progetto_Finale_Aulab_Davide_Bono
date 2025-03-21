@@ -62,7 +62,7 @@
                     
                     <div class="row justify-content-evenly pt-3">
                         @foreach ($posts as $post)
-                        <div class="col-4 my-4 d-flex justify-content-center">
+                        <div class="col-4 d-flex justify-content-center">
                             <x-card :post="$post"></x-card>
                         </div>
                         @endforeach
